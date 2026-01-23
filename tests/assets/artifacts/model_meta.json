@@ -1,0 +1,7 @@
+{
+  "model_version": "test-model-v1",
+  "threshold": 0.5,
+  "feature_names": [
+    "SK_ID_CURR"
+  ]
+}
