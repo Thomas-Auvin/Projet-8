@@ -1,0 +1,32 @@
+# Python-generated files
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# env
+.venv/
+__pycache__/
+*.pyc
+
+# data (ne jamais commit les données brutes)
+data/raw_local/
+data/processed/
+*.parquet
+*.csv
+
+# sauf ton échantillon de référence
+!data/reference/reference_sample.csv
+
+# mlflow
+mlruns/
+
+# Artifacts ML volumineux
+app/artifacts/*.joblib
+app/artifacts/*.pkl
+app/artifacts/*.bin
+
+# OS
+.DS_Store
+Thumbs.db
