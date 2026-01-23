@@ -1,13 +1,8 @@
-import os
 from fastapi.testclient import TestClient
 
 
-def test_health(monkeypatch, tmp_path):
-    monkeypatch.setenv("P8_DB_PATH", str(tmp_path / "preds.sqlite"))
-    monkeypatch.setenv("P8_STRICT_INPUT", "0")
-
-    from app.main import app  # import ici pour garder le test simple
-
+def test_health(p8_env):
+    from app.main import app
     with TestClient(app) as client:
         r = client.get("/health")
         assert r.status_code == 200
@@ -15,13 +10,10 @@ def test_health(monkeypatch, tmp_path):
         assert data["status"] in ("ok", "not_ready")
 
 
-def test_predict_ok(monkeypatch, tmp_path):
-    db_path = tmp_path / "preds.sqlite"
-    monkeypatch.setenv("P8_DB_PATH", str(db_path))
-    monkeypatch.setenv("P8_STRICT_INPUT", "0")
+def test_predict_ok(p8_env):
+    db_path = p8_env / "preds.sqlite"
 
     from app.main import app
-
     with TestClient(app) as client:
         payload = {"features": {"SK_ID_CURR": 100001}}
         r = client.post("/predict", json=payload)
@@ -36,10 +28,11 @@ def test_predict_missing_model(monkeypatch, tmp_path):
     # on pointe vers un dossier artifacts vide -> startup doit échouer
     monkeypatch.setenv("P8_ARTIFACTS_DIR", str(tmp_path / "empty_artifacts"))
     monkeypatch.setenv("P8_DB_PATH", str(tmp_path / "preds.sqlite"))
+    monkeypatch.setenv("P8_STRICT_INPUT", "0")
 
     from app.main import app
 
-    # Ici l'app va échouer au startup : on vérifie juste que ça plante bien.
+    # On s'attend à une exception au startup (FileNotFoundError typiquement)
     try:
         with TestClient(app):
             pass
