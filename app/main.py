@@ -13,6 +13,7 @@ from typing import Any
 import numpy as np
 import pandas as pd
 from fastapi import FastAPI, HTTPException
+from fastapi.responses import RedirectResponse
 
 from app.model_loader import LoadedModel, load_model
 from app.schemas import (
@@ -119,13 +120,10 @@ def health() -> dict[str, Any]:
     }
 
 
-@app.get("/")
-def root() -> dict[str, str]:
-    return {
-        "message": "Credit Scoring API is running",
-        "docs": "/docs",
-        "health": "/health",
-    }
+
+@app.get("/", include_in_schema=False)
+def root():
+    return RedirectResponse(url="/docs")
 
 
 @app.post("/predict", response_model=PredictResponse)
