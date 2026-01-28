@@ -235,6 +235,8 @@ def predict_batch(req: PredictBatchRequest) -> PredictBatchResponse:
     items: list[PredictBatchItem] = []
     now_iso = datetime.now(timezone.utc).isoformat()
 
+    log_rows: list[dict[str, Any]] = []
+
     for i in range(n):
         request_id = str(uuid4())
         proba = float(probas[i])
@@ -251,8 +253,7 @@ def predict_batch(req: PredictBatchRequest) -> PredictBatchResponse:
             )
         )
 
-        # log : latency_ms jamais None -> plus de crash sqlite
-        store.log_prediction(
+        log_rows.append(
             {
                 "ts_utc": now_iso,
                 "request_id": request_id,
@@ -264,6 +265,8 @@ def predict_batch(req: PredictBatchRequest) -> PredictBatchResponse:
                 "features": req.rows[i],  # on log l'input brut reçu
             }
         )
+
+    store.log_predictions_many(log_rows)
 
     return PredictBatchResponse(n_rows=n, items=items)
 
