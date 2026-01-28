@@ -2,7 +2,7 @@ name: CD - Deploy to Hugging Face Space
 
 on:
   push:
-    branches: [main]
+    branches: [master]
   workflow_dispatch:
 
 jobs:
