@@ -1,6 +1,6 @@
 {
   "n_ref_rows": 1000,
-  "n_prod_rows": 1,
+  "n_prod_rows": 2000,
   "features_total": 827,
   "top_psi": [
     {
@@ -11,7 +11,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_1_MEAN_MAX",
@@ -21,7 +21,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_1_MEAN_VAR",
@@ -31,7 +31,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.729,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_1_MEAN_MEAN",
@@ -41,7 +41,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_MIN_MAX",
@@ -51,7 +51,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_MEAN_MAX",
@@ -61,7 +61,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_PRODUCT_COMBINATION_Card Street_MEAN",
@@ -71,7 +71,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_SUM_MAX",
@@ -81,7 +81,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_1_MEAN_SUM",
@@ -91,7 +91,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_CREDIT_SUM_LIMIT_VAR",
@@ -101,7 +101,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.354,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_PRODUCT_COMBINATION_Cash Street: high_MEAN",
@@ -111,7 +111,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CNT_CHILDREN",
@@ -121,7 +121,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_ANNUITY_VAR",
@@ -131,7 +131,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.793,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CONTRACT_TYPE_Revolving loans_MEAN",
@@ -141,7 +141,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_CODE_REJECT_REASON_HC_MEAN",
@@ -151,7 +151,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_X_MEAN_MAX",
@@ -161,7 +161,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_CREDIT_SUM_LIMIT_MAX",
@@ -171,7 +171,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.197,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_CREDIT_SUM_LIMIT_MEAN",
@@ -181,7 +181,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.197,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_MAX_MIN",
@@ -191,7 +191,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_PRODUCT_TYPE_walk-in_MEAN",
@@ -201,7 +201,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_ANNUITY_MAX",
@@ -211,7 +211,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.737,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_C_MEAN_SUM",
@@ -221,7 +221,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_MAX_MEAN",
@@ -231,7 +231,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_ANNUITY_SUM",
@@ -241,7 +241,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_ANNUITY_MEAN",
@@ -251,7 +251,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.737,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_MAX_SUM",
@@ -261,7 +261,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_MAX_VAR",
@@ -271,7 +271,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.729,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_0_MEAN_MIN",
@@ -281,7 +281,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_X_MEAN_MEAN",
@@ -291,7 +291,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_GOODS_CATEGORY_Audio/Video_MEAN",
@@ -301,7 +301,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     }
   ],
   "top_missing_delta": [
@@ -313,7 +313,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 1.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_ANNUITY_VAR",
@@ -323,7 +323,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.793,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_ANNUITY_MAX",
@@ -333,7 +333,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.737,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_ANNUITY_MEAN",
@@ -343,7 +343,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.737,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_ANNUITY_MIN",
@@ -353,7 +353,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.737,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_MAX_VAR",
@@ -363,7 +363,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.729,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_MEAN_VAR",
@@ -373,7 +373,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.729,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_MIN_VAR",
@@ -383,7 +383,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.729,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_SUM_VAR",
@@ -393,7 +393,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.729,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_VAR_VAR",
@@ -403,7 +403,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.729,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_0_MEAN_VAR",
@@ -413,7 +413,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.729,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_1_MEAN_VAR",
@@ -423,7 +423,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.729,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_2_MEAN_VAR",
@@ -433,7 +433,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.729,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_3_MEAN_VAR",
@@ -443,7 +443,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.729,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_4_MEAN_VAR",
@@ -453,7 +453,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.729,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_5_MEAN_VAR",
@@ -463,7 +463,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.729,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_C_MEAN_VAR",
@@ -473,7 +473,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.729,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_X_MEAN_VAR",
@@ -483,7 +483,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.729,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_MAX_MAX",
@@ -493,7 +493,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_MAX_MEAN",
@@ -503,7 +503,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_MAX_MIN",
@@ -513,7 +513,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_MEAN_MAX",
@@ -523,7 +523,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_MEAN_MEAN",
@@ -533,7 +533,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_MEAN_MIN",
@@ -543,7 +543,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_MIN_MAX",
@@ -553,7 +553,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_MIN_MEAN",
@@ -563,7 +563,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_MIN_MIN",
@@ -573,7 +573,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_SUM_MAX",
@@ -583,7 +583,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_SUM_MEAN",
@@ -593,7 +593,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_SUM_MIN",
@@ -603,7 +603,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     }
   ],
   "all_features": [
@@ -615,7 +615,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "AMT_CREDIT",
@@ -625,7 +625,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "AMT_GOODS_PRICE",
@@ -635,7 +635,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.001,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "AMT_INCOME_TOTAL",
@@ -645,7 +645,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "AMT_REQ_CREDIT_BUREAU_DAY",
@@ -655,7 +655,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.135,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "AMT_REQ_CREDIT_BUREAU_HOUR",
@@ -665,7 +665,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.135,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "AMT_REQ_CREDIT_BUREAU_MON",
@@ -675,7 +675,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.135,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "AMT_REQ_CREDIT_BUREAU_QRT",
@@ -685,7 +685,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.135,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "AMT_REQ_CREDIT_BUREAU_WEEK",
@@ -695,7 +695,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.135,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "AMT_REQ_CREDIT_BUREAU_YEAR",
@@ -705,7 +705,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.135,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ANNUITY_INCOME_PERC",
@@ -715,7 +715,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "APARTMENTS_AVG",
@@ -725,7 +725,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.46799999999999997,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "APARTMENTS_MEDI",
@@ -735,7 +735,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.46799999999999997,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "APARTMENTS_MODE",
@@ -745,7 +745,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.46799999999999997,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BASEMENTAREA_AVG",
@@ -755,7 +755,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.386,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BASEMENTAREA_MEDI",
@@ -765,7 +765,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.386,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BASEMENTAREA_MODE",
@@ -775,7 +775,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.386,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_ANNUITY_MAX",
@@ -785,7 +785,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.737,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_ANNUITY_MEAN",
@@ -795,7 +795,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.737,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_ANNUITY_MIN",
@@ -805,7 +805,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.737,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_ANNUITY_SUM",
@@ -815,7 +815,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_ANNUITY_VAR",
@@ -825,7 +825,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.793,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_CREDIT_MAX_OVERDUE_MAX",
@@ -835,7 +835,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.39,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_CREDIT_MAX_OVERDUE_MEAN",
@@ -845,7 +845,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.39,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_CREDIT_MAX_OVERDUE_MIN",
@@ -855,7 +855,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.39,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_CREDIT_MAX_OVERDUE_SUM",
@@ -865,7 +865,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_CREDIT_MAX_OVERDUE_VAR",
@@ -875,7 +875,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.596,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_CREDIT_SUM_DEBT_MAX",
@@ -885,7 +885,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.163,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_CREDIT_SUM_DEBT_MEAN",
@@ -895,7 +895,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.163,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_CREDIT_SUM_DEBT_MIN",
@@ -905,7 +905,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.163,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_CREDIT_SUM_DEBT_SUM",
@@ -915,7 +915,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_CREDIT_SUM_DEBT_VAR",
@@ -925,7 +925,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.293,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_CREDIT_SUM_LIMIT_MAX",
@@ -935,7 +935,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.197,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_CREDIT_SUM_LIMIT_MEAN",
@@ -945,7 +945,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.197,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_CREDIT_SUM_LIMIT_MIN",
@@ -955,7 +955,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.197,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_CREDIT_SUM_LIMIT_SUM",
@@ -965,7 +965,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_CREDIT_SUM_LIMIT_VAR",
@@ -975,7 +975,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.354,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_CREDIT_SUM_MAX",
@@ -985,7 +985,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_CREDIT_SUM_MEAN",
@@ -995,7 +995,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_CREDIT_SUM_MIN",
@@ -1005,7 +1005,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_CREDIT_SUM_OVERDUE_MAX",
@@ -1015,7 +1015,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_CREDIT_SUM_OVERDUE_MEAN",
@@ -1025,7 +1025,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_CREDIT_SUM_OVERDUE_MIN",
@@ -1035,7 +1035,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_CREDIT_SUM_OVERDUE_SUM",
@@ -1045,7 +1045,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_CREDIT_SUM_OVERDUE_VAR",
@@ -1055,7 +1055,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.263,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_CREDIT_SUM_SUM",
@@ -1065,7 +1065,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_AMT_CREDIT_SUM_VAR",
@@ -1075,7 +1075,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.263,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_MAX_MAX",
@@ -1085,7 +1085,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_MAX_MEAN",
@@ -1095,7 +1095,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_MAX_MIN",
@@ -1105,7 +1105,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_MAX_SUM",
@@ -1115,7 +1115,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_MAX_VAR",
@@ -1125,7 +1125,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.729,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_MEAN_MAX",
@@ -1135,7 +1135,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_MEAN_MEAN",
@@ -1145,7 +1145,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_MEAN_MIN",
@@ -1155,7 +1155,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_MEAN_SUM",
@@ -1165,7 +1165,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_MEAN_VAR",
@@ -1175,7 +1175,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.729,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_MIN_MAX",
@@ -1185,7 +1185,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_MIN_MEAN",
@@ -1195,7 +1195,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_MIN_MIN",
@@ -1205,7 +1205,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_MIN_SUM",
@@ -1215,7 +1215,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_MIN_VAR",
@@ -1225,7 +1225,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.729,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_SUM_MAX",
@@ -1235,7 +1235,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_SUM_MEAN",
@@ -1245,7 +1245,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_SUM_MIN",
@@ -1255,7 +1255,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_SUM_SUM",
@@ -1265,7 +1265,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_SUM_VAR",
@@ -1275,7 +1275,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.729,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_VAR_MAX",
@@ -1285,7 +1285,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_VAR_MEAN",
@@ -1295,7 +1295,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_VAR_MIN",
@@ -1305,7 +1305,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_VAR_SUM",
@@ -1315,7 +1315,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_MONTHS_BALANCE_VAR_VAR",
@@ -1325,7 +1325,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.729,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_0_MEAN_MAX",
@@ -1335,7 +1335,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_0_MEAN_MEAN",
@@ -1345,7 +1345,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_0_MEAN_MIN",
@@ -1355,7 +1355,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_0_MEAN_SUM",
@@ -1365,7 +1365,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_0_MEAN_VAR",
@@ -1375,7 +1375,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.729,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_1_MEAN_MAX",
@@ -1385,7 +1385,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_1_MEAN_MEAN",
@@ -1395,7 +1395,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_1_MEAN_MIN",
@@ -1405,7 +1405,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_1_MEAN_SUM",
@@ -1415,7 +1415,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_1_MEAN_VAR",
@@ -1425,7 +1425,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.729,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_2_MEAN_MAX",
@@ -1435,7 +1435,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_2_MEAN_MEAN",
@@ -1445,7 +1445,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_2_MEAN_MIN",
@@ -1455,7 +1455,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_2_MEAN_SUM",
@@ -1465,7 +1465,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_2_MEAN_VAR",
@@ -1475,7 +1475,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.729,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_3_MEAN_MAX",
@@ -1485,7 +1485,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_3_MEAN_MEAN",
@@ -1495,7 +1495,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_3_MEAN_MIN",
@@ -1505,7 +1505,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_3_MEAN_SUM",
@@ -1515,7 +1515,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_3_MEAN_VAR",
@@ -1525,7 +1525,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.729,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_4_MEAN_MAX",
@@ -1535,7 +1535,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_4_MEAN_MEAN",
@@ -1545,7 +1545,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_4_MEAN_MIN",
@@ -1555,7 +1555,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_4_MEAN_SUM",
@@ -1565,7 +1565,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_4_MEAN_VAR",
@@ -1575,7 +1575,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.729,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_5_MEAN_MAX",
@@ -1585,7 +1585,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_5_MEAN_MEAN",
@@ -1595,7 +1595,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_5_MEAN_MIN",
@@ -1605,7 +1605,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_5_MEAN_SUM",
@@ -1615,7 +1615,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_5_MEAN_VAR",
@@ -1625,7 +1625,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.729,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_C_MEAN_MAX",
@@ -1635,7 +1635,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_C_MEAN_MEAN",
@@ -1645,7 +1645,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_C_MEAN_MIN",
@@ -1655,7 +1655,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_C_MEAN_SUM",
@@ -1665,7 +1665,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_C_MEAN_VAR",
@@ -1675,7 +1675,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.729,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_X_MEAN_MAX",
@@ -1685,7 +1685,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_X_MEAN_MEAN",
@@ -1695,7 +1695,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_X_MEAN_MIN",
@@ -1705,7 +1705,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.692,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_X_MEAN_SUM",
@@ -1715,7 +1715,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_BB_STATUS_X_MEAN_VAR",
@@ -1725,7 +1725,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.729,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_CNT_CREDIT_PROLONG_MAX",
@@ -1735,7 +1735,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_CNT_CREDIT_PROLONG_MEAN",
@@ -1745,7 +1745,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_CNT_CREDIT_PROLONG_MIN",
@@ -1755,7 +1755,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_CNT_CREDIT_PROLONG_SUM",
@@ -1765,7 +1765,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_CNT_CREDIT_PROLONG_VAR",
@@ -1775,7 +1775,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.263,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_CREDIT_ACTIVE_Active_MEAN",
@@ -1785,7 +1785,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_CREDIT_ACTIVE_Bad debt_MEAN",
@@ -1795,7 +1795,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_CREDIT_ACTIVE_Closed_MEAN",
@@ -1805,7 +1805,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_CREDIT_ACTIVE_Sold_MEAN",
@@ -1815,7 +1815,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_CREDIT_CURRENCY_currency 1_MEAN",
@@ -1825,7 +1825,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_CREDIT_CURRENCY_currency 2_MEAN",
@@ -1835,7 +1835,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_CREDIT_CURRENCY_currency 3_MEAN",
@@ -1845,7 +1845,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_CREDIT_CURRENCY_currency 4_MEAN",
@@ -1855,7 +1855,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_CREDIT_DAY_OVERDUE_MAX",
@@ -1865,7 +1865,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_CREDIT_DAY_OVERDUE_MEAN",
@@ -1875,7 +1875,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_CREDIT_DAY_OVERDUE_MIN",
@@ -1885,7 +1885,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_CREDIT_DAY_OVERDUE_SUM",
@@ -1895,7 +1895,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_CREDIT_DAY_OVERDUE_VAR",
@@ -1905,7 +1905,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.263,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_CREDIT_TYPE_Another type of loan_MEAN",
@@ -1915,7 +1915,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_CREDIT_TYPE_Car loan_MEAN",
@@ -1925,7 +1925,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_CREDIT_TYPE_Cash loan (non-earmarked)_MEAN",
@@ -1935,7 +1935,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_CREDIT_TYPE_Consumer credit_MEAN",
@@ -1945,7 +1945,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_CREDIT_TYPE_Credit card_MEAN",
@@ -1955,7 +1955,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_CREDIT_TYPE_Interbank credit_MEAN",
@@ -1965,7 +1965,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_CREDIT_TYPE_Loan for business development_MEAN",
@@ -1975,7 +1975,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_CREDIT_TYPE_Loan for purchase of shares (margin lending)_MEAN",
@@ -1985,7 +1985,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_CREDIT_TYPE_Loan for the purchase of equipment_MEAN",
@@ -1995,7 +1995,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_CREDIT_TYPE_Loan for working capital replenishment_MEAN",
@@ -2005,7 +2005,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_CREDIT_TYPE_Microloan_MEAN",
@@ -2015,7 +2015,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_CREDIT_TYPE_Mobile operator loan_MEAN",
@@ -2025,7 +2025,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_CREDIT_TYPE_Mortgage_MEAN",
@@ -2035,7 +2035,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_CREDIT_TYPE_Real estate loan_MEAN",
@@ -2045,7 +2045,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_CREDIT_TYPE_Unknown type of loan_MEAN",
@@ -2055,7 +2055,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_DAYS_CREDIT_ENDDATE_MAX",
@@ -2065,7 +2065,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.153,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_DAYS_CREDIT_ENDDATE_MEAN",
@@ -2075,7 +2075,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.153,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_DAYS_CREDIT_ENDDATE_MIN",
@@ -2085,7 +2085,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.153,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_DAYS_CREDIT_ENDDATE_SUM",
@@ -2095,7 +2095,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_DAYS_CREDIT_ENDDATE_VAR",
@@ -2105,7 +2105,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.274,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_DAYS_CREDIT_MAX",
@@ -2115,7 +2115,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_DAYS_CREDIT_MEAN",
@@ -2125,7 +2125,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_DAYS_CREDIT_MIN",
@@ -2135,7 +2135,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_DAYS_CREDIT_SUM",
@@ -2145,7 +2145,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_DAYS_CREDIT_UPDATE_MAX",
@@ -2155,7 +2155,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_DAYS_CREDIT_UPDATE_MEAN",
@@ -2165,7 +2165,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_DAYS_CREDIT_UPDATE_MIN",
@@ -2175,7 +2175,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_DAYS_CREDIT_UPDATE_SUM",
@@ -2185,7 +2185,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_DAYS_CREDIT_UPDATE_VAR",
@@ -2195,7 +2195,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.263,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_DAYS_CREDIT_VAR",
@@ -2205,7 +2205,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.263,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_DAYS_ENDDATE_FACT_MAX",
@@ -2215,7 +2215,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.254,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_DAYS_ENDDATE_FACT_MEAN",
@@ -2225,7 +2225,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.254,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_DAYS_ENDDATE_FACT_MIN",
@@ -2235,7 +2235,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.254,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_DAYS_ENDDATE_FACT_SUM",
@@ -2245,7 +2245,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_DAYS_ENDDATE_FACT_VAR",
@@ -2255,7 +2255,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.428,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_SK_ID_BUREAU_MAX",
@@ -2265,7 +2265,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_SK_ID_BUREAU_MEAN",
@@ -2275,7 +2275,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_SK_ID_BUREAU_MIN",
@@ -2285,7 +2285,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_SK_ID_BUREAU_SUM",
@@ -2295,7 +2295,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.145,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "BUREAU_SK_ID_BUREAU_VAR",
@@ -2305,7 +2305,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.263,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_BALANCE_MAX",
@@ -2315,7 +2315,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_BALANCE_MEAN",
@@ -2325,7 +2325,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_BALANCE_MIN",
@@ -2335,7 +2335,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_BALANCE_SUM",
@@ -2345,7 +2345,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_BALANCE_VAR",
@@ -2355,7 +2355,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.241,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_CREDIT_LIMIT_ACTUAL_MAX",
@@ -2365,7 +2365,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_CREDIT_LIMIT_ACTUAL_MEAN",
@@ -2375,7 +2375,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_CREDIT_LIMIT_ACTUAL_MIN",
@@ -2385,7 +2385,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_CREDIT_LIMIT_ACTUAL_SUM",
@@ -2395,7 +2395,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_CREDIT_LIMIT_ACTUAL_VAR",
@@ -2405,7 +2405,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.241,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_DRAWINGS_ATM_CURRENT_MAX",
@@ -2415,7 +2415,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.17700000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_DRAWINGS_ATM_CURRENT_MEAN",
@@ -2425,7 +2425,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.17700000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_DRAWINGS_ATM_CURRENT_MIN",
@@ -2435,7 +2435,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.17700000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_DRAWINGS_ATM_CURRENT_SUM",
@@ -2445,7 +2445,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_DRAWINGS_ATM_CURRENT_VAR",
@@ -2455,7 +2455,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.17600000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_DRAWINGS_CURRENT_MAX",
@@ -2465,7 +2465,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_DRAWINGS_CURRENT_MEAN",
@@ -2475,7 +2475,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_DRAWINGS_CURRENT_MIN",
@@ -2485,7 +2485,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_DRAWINGS_CURRENT_SUM",
@@ -2495,7 +2495,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_DRAWINGS_CURRENT_VAR",
@@ -2505,7 +2505,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.241,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_DRAWINGS_OTHER_CURRENT_MAX",
@@ -2515,7 +2515,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.17700000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_DRAWINGS_OTHER_CURRENT_MEAN",
@@ -2525,7 +2525,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.17700000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_DRAWINGS_OTHER_CURRENT_MIN",
@@ -2535,7 +2535,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.17700000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_DRAWINGS_OTHER_CURRENT_SUM",
@@ -2545,7 +2545,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_DRAWINGS_OTHER_CURRENT_VAR",
@@ -2555,7 +2555,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.17600000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_DRAWINGS_POS_CURRENT_MAX",
@@ -2565,7 +2565,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.17700000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_DRAWINGS_POS_CURRENT_MEAN",
@@ -2575,7 +2575,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.17700000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_DRAWINGS_POS_CURRENT_MIN",
@@ -2585,7 +2585,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.17700000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_DRAWINGS_POS_CURRENT_SUM",
@@ -2595,7 +2595,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_DRAWINGS_POS_CURRENT_VAR",
@@ -2605,7 +2605,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.17600000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_INST_MIN_REGULARITY_MAX",
@@ -2615,7 +2615,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_INST_MIN_REGULARITY_MEAN",
@@ -2625,7 +2625,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_INST_MIN_REGULARITY_MIN",
@@ -2635,7 +2635,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_INST_MIN_REGULARITY_SUM",
@@ -2645,7 +2645,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_INST_MIN_REGULARITY_VAR",
@@ -2655,7 +2655,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.241,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_PAYMENT_CURRENT_MAX",
@@ -2665,7 +2665,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.17700000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_PAYMENT_CURRENT_MEAN",
@@ -2675,7 +2675,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.17700000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_PAYMENT_CURRENT_MIN",
@@ -2685,7 +2685,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.17700000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_PAYMENT_CURRENT_SUM",
@@ -2695,7 +2695,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_PAYMENT_CURRENT_VAR",
@@ -2705,7 +2705,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.17600000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_PAYMENT_TOTAL_CURRENT_MAX",
@@ -2715,7 +2715,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_PAYMENT_TOTAL_CURRENT_MEAN",
@@ -2725,7 +2725,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_PAYMENT_TOTAL_CURRENT_MIN",
@@ -2735,7 +2735,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_PAYMENT_TOTAL_CURRENT_SUM",
@@ -2745,7 +2745,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_PAYMENT_TOTAL_CURRENT_VAR",
@@ -2755,7 +2755,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.241,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_RECEIVABLE_PRINCIPAL_MAX",
@@ -2765,7 +2765,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_RECEIVABLE_PRINCIPAL_MEAN",
@@ -2775,7 +2775,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_RECEIVABLE_PRINCIPAL_MIN",
@@ -2785,7 +2785,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_RECEIVABLE_PRINCIPAL_SUM",
@@ -2795,7 +2795,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_RECEIVABLE_PRINCIPAL_VAR",
@@ -2805,7 +2805,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.241,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_RECIVABLE_MAX",
@@ -2815,7 +2815,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_RECIVABLE_MEAN",
@@ -2825,7 +2825,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_RECIVABLE_MIN",
@@ -2835,7 +2835,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_RECIVABLE_SUM",
@@ -2845,7 +2845,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_RECIVABLE_VAR",
@@ -2855,7 +2855,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.241,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_TOTAL_RECEIVABLE_MAX",
@@ -2865,7 +2865,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_TOTAL_RECEIVABLE_MEAN",
@@ -2875,7 +2875,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_TOTAL_RECEIVABLE_MIN",
@@ -2885,7 +2885,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_TOTAL_RECEIVABLE_SUM",
@@ -2895,7 +2895,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_AMT_TOTAL_RECEIVABLE_VAR",
@@ -2905,7 +2905,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.241,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_CNT_DRAWINGS_ATM_CURRENT_MAX",
@@ -2915,7 +2915,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.17700000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_CNT_DRAWINGS_ATM_CURRENT_MEAN",
@@ -2925,7 +2925,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.17700000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_CNT_DRAWINGS_ATM_CURRENT_MIN",
@@ -2935,7 +2935,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.17700000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_CNT_DRAWINGS_ATM_CURRENT_SUM",
@@ -2945,7 +2945,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_CNT_DRAWINGS_ATM_CURRENT_VAR",
@@ -2955,7 +2955,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.17600000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_CNT_DRAWINGS_CURRENT_MAX",
@@ -2965,7 +2965,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_CNT_DRAWINGS_CURRENT_MEAN",
@@ -2975,7 +2975,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_CNT_DRAWINGS_CURRENT_MIN",
@@ -2985,7 +2985,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_CNT_DRAWINGS_CURRENT_SUM",
@@ -2995,7 +2995,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_CNT_DRAWINGS_CURRENT_VAR",
@@ -3005,7 +3005,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.241,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_CNT_DRAWINGS_OTHER_CURRENT_MAX",
@@ -3015,7 +3015,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.17700000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_CNT_DRAWINGS_OTHER_CURRENT_MEAN",
@@ -3025,7 +3025,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.17700000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_CNT_DRAWINGS_OTHER_CURRENT_MIN",
@@ -3035,7 +3035,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.17700000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_CNT_DRAWINGS_OTHER_CURRENT_SUM",
@@ -3045,7 +3045,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_CNT_DRAWINGS_OTHER_CURRENT_VAR",
@@ -3055,7 +3055,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.17600000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_CNT_DRAWINGS_POS_CURRENT_MAX",
@@ -3065,7 +3065,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.17700000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_CNT_DRAWINGS_POS_CURRENT_MEAN",
@@ -3075,7 +3075,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.17700000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_CNT_DRAWINGS_POS_CURRENT_MIN",
@@ -3085,7 +3085,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.17700000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_CNT_DRAWINGS_POS_CURRENT_SUM",
@@ -3095,7 +3095,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_CNT_DRAWINGS_POS_CURRENT_VAR",
@@ -3105,7 +3105,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.17600000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_CNT_INSTALMENT_MATURE_CUM_MAX",
@@ -3115,7 +3115,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_CNT_INSTALMENT_MATURE_CUM_MEAN",
@@ -3125,7 +3125,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_CNT_INSTALMENT_MATURE_CUM_MIN",
@@ -3135,7 +3135,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_CNT_INSTALMENT_MATURE_CUM_SUM",
@@ -3145,7 +3145,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_CNT_INSTALMENT_MATURE_CUM_VAR",
@@ -3155,7 +3155,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.241,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_MONTHS_BALANCE_MAX",
@@ -3165,7 +3165,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_MONTHS_BALANCE_MEAN",
@@ -3175,7 +3175,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_MONTHS_BALANCE_MIN",
@@ -3185,7 +3185,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_MONTHS_BALANCE_SUM",
@@ -3195,7 +3195,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_MONTHS_BALANCE_VAR",
@@ -3205,7 +3205,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.241,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_NAME_CONTRACT_STATUS_Active_MEAN",
@@ -3215,7 +3215,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_NAME_CONTRACT_STATUS_Approved_MEAN",
@@ -3225,7 +3225,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_NAME_CONTRACT_STATUS_Completed_MEAN",
@@ -3235,7 +3235,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_NAME_CONTRACT_STATUS_Demand_MEAN",
@@ -3245,7 +3245,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_NAME_CONTRACT_STATUS_Refused_MEAN",
@@ -3255,7 +3255,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_NAME_CONTRACT_STATUS_Sent proposal_MEAN",
@@ -3265,7 +3265,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_NAME_CONTRACT_STATUS_Signed_MEAN",
@@ -3275,7 +3275,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_SK_DPD_DEF_MAX",
@@ -3285,7 +3285,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_SK_DPD_DEF_MEAN",
@@ -3295,7 +3295,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_SK_DPD_DEF_SUM",
@@ -3305,7 +3305,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_SK_DPD_DEF_VAR",
@@ -3315,7 +3315,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.241,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_SK_DPD_MAX",
@@ -3325,7 +3325,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_SK_DPD_MEAN",
@@ -3335,7 +3335,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_SK_DPD_SUM",
@@ -3345,7 +3345,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_SK_DPD_VAR",
@@ -3355,7 +3355,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.241,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_SK_ID_PREV_MAX",
@@ -3365,7 +3365,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_SK_ID_PREV_MEAN",
@@ -3375,7 +3375,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_SK_ID_PREV_MIN",
@@ -3385,7 +3385,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_SK_ID_PREV_SUM",
@@ -3395,7 +3395,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.244,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CCB_SK_ID_PREV_VAR",
@@ -3405,7 +3405,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.241,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CNT_CHILDREN",
@@ -3415,7 +3415,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CNT_FAM_MEMBERS",
@@ -3425,7 +3425,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CODE_GENDER_F",
@@ -3435,7 +3435,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "CODE_GENDER_M",
@@ -3445,7 +3445,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "COMMONAREA_AVG",
@@ -3455,7 +3455,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.29500000000000004,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "COMMONAREA_MEDI",
@@ -3465,7 +3465,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.29500000000000004,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "COMMONAREA_MODE",
@@ -3475,7 +3475,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.29500000000000004,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "DAYS_BIRTH",
@@ -3485,7 +3485,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "DAYS_EMPLOYED",
@@ -3495,7 +3495,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.181,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "DAYS_EMPLOYED_ANOM",
@@ -3505,7 +3505,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "DAYS_EMPLOYED_PERC",
@@ -3515,7 +3515,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.181,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "DAYS_ID_PUBLISH",
@@ -3525,7 +3525,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "DAYS_LAST_PHONE_CHANGE",
@@ -3535,7 +3535,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "DAYS_REGISTRATION",
@@ -3545,7 +3545,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "DEF_30_CNT_SOCIAL_CIRCLE",
@@ -3555,7 +3555,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.003,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "DEF_60_CNT_SOCIAL_CIRCLE",
@@ -3565,7 +3565,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.003,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ELEVATORS_AVG",
@@ -3575,7 +3575,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.44699999999999995,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ELEVATORS_MEDI",
@@ -3585,7 +3585,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.44699999999999995,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ELEVATORS_MODE",
@@ -3595,7 +3595,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.44699999999999995,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "EMERGENCYSTATE_MODE_No",
@@ -3605,7 +3605,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "EMERGENCYSTATE_MODE_Yes",
@@ -3615,7 +3615,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ENTRANCES_AVG",
@@ -3625,7 +3625,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.474,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ENTRANCES_MEDI",
@@ -3635,7 +3635,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.474,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ENTRANCES_MODE",
@@ -3645,7 +3645,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.474,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "EXT_SOURCE_1",
@@ -3655,7 +3655,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.554,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "EXT_SOURCE_2",
@@ -3665,7 +3665,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.003,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "EXT_SOURCE_3",
@@ -3675,7 +3675,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.191,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FLAG_CONT_MOBILE",
@@ -3685,7 +3685,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FLAG_DOCUMENT_10",
@@ -3695,7 +3695,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FLAG_DOCUMENT_11",
@@ -3705,7 +3705,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FLAG_DOCUMENT_12",
@@ -3715,7 +3715,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FLAG_DOCUMENT_13",
@@ -3725,7 +3725,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FLAG_DOCUMENT_14",
@@ -3735,7 +3735,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FLAG_DOCUMENT_15",
@@ -3745,7 +3745,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FLAG_DOCUMENT_16",
@@ -3755,7 +3755,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FLAG_DOCUMENT_17",
@@ -3765,7 +3765,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FLAG_DOCUMENT_18",
@@ -3775,7 +3775,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FLAG_DOCUMENT_19",
@@ -3785,7 +3785,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FLAG_DOCUMENT_2",
@@ -3795,7 +3795,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FLAG_DOCUMENT_20",
@@ -3805,7 +3805,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FLAG_DOCUMENT_21",
@@ -3815,7 +3815,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FLAG_DOCUMENT_3",
@@ -3825,7 +3825,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FLAG_DOCUMENT_4",
@@ -3835,7 +3835,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FLAG_DOCUMENT_5",
@@ -3845,7 +3845,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FLAG_DOCUMENT_6",
@@ -3855,7 +3855,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FLAG_DOCUMENT_7",
@@ -3865,7 +3865,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FLAG_DOCUMENT_8",
@@ -3875,7 +3875,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FLAG_DOCUMENT_9",
@@ -3885,7 +3885,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FLAG_EMAIL",
@@ -3895,7 +3895,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FLAG_EMP_PHONE",
@@ -3905,7 +3905,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FLAG_MOBIL",
@@ -3915,7 +3915,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FLAG_OWN_CAR",
@@ -3925,7 +3925,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FLAG_OWN_REALTY",
@@ -3935,7 +3935,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FLAG_PHONE",
@@ -3945,7 +3945,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FLAG_WORK_PHONE",
@@ -3955,7 +3955,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FLOORSMAX_AVG",
@@ -3965,7 +3965,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.474,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FLOORSMAX_MEDI",
@@ -3975,7 +3975,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.474,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FLOORSMAX_MODE",
@@ -3985,7 +3985,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.474,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FLOORSMIN_AVG",
@@ -3995,7 +3995,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.30800000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FLOORSMIN_MEDI",
@@ -4005,7 +4005,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.30800000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FLOORSMIN_MODE",
@@ -4015,7 +4015,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.30800000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FONDKAPREMONT_MODE_not specified",
@@ -4025,7 +4025,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FONDKAPREMONT_MODE_org spec account",
@@ -4035,7 +4035,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FONDKAPREMONT_MODE_reg oper account",
@@ -4045,7 +4045,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "FONDKAPREMONT_MODE_reg oper spec account",
@@ -4055,7 +4055,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "HOUR_APPR_PROCESS_START",
@@ -4065,7 +4065,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "HOUSETYPE_MODE_block of flats",
@@ -4075,7 +4075,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "HOUSETYPE_MODE_specific housing",
@@ -4085,7 +4085,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "HOUSETYPE_MODE_terraced house",
@@ -4095,7 +4095,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INCOME_CREDIT_PERC",
@@ -4105,7 +4105,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INCOME_PER_PERSON",
@@ -4115,7 +4115,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_AMT_INSTALMENT_MAX",
@@ -4125,7 +4125,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.062,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_AMT_INSTALMENT_MEAN",
@@ -4135,7 +4135,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.062,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_AMT_INSTALMENT_MIN",
@@ -4145,7 +4145,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.062,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_AMT_INSTALMENT_SUM",
@@ -4155,7 +4155,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.062,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_AMT_INSTALMENT_VAR",
@@ -4165,7 +4165,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.063,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_AMT_PAYMENT_MAX",
@@ -4175,7 +4175,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.062,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_AMT_PAYMENT_MEAN",
@@ -4185,7 +4185,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.062,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_AMT_PAYMENT_MIN",
@@ -4195,7 +4195,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.062,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_AMT_PAYMENT_SUM",
@@ -4205,7 +4205,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.062,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_AMT_PAYMENT_VAR",
@@ -4215,7 +4215,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.063,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_DAYS_ENTRY_PAYMENT_MAX",
@@ -4225,7 +4225,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.062,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_DAYS_ENTRY_PAYMENT_MEAN",
@@ -4235,7 +4235,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.062,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_DAYS_ENTRY_PAYMENT_MIN",
@@ -4245,7 +4245,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.062,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_DAYS_ENTRY_PAYMENT_SUM",
@@ -4255,7 +4255,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.062,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_DAYS_ENTRY_PAYMENT_VAR",
@@ -4265,7 +4265,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.063,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_DAYS_INSTALMENT_MAX",
@@ -4275,7 +4275,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.062,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_DAYS_INSTALMENT_MEAN",
@@ -4285,7 +4285,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.062,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_DAYS_INSTALMENT_MIN",
@@ -4295,7 +4295,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.062,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_DAYS_INSTALMENT_SUM",
@@ -4305,7 +4305,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.062,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_DAYS_INSTALMENT_VAR",
@@ -4315,7 +4315,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.063,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_NUM_INSTALMENT_NUMBER_MAX",
@@ -4325,7 +4325,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.062,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_NUM_INSTALMENT_NUMBER_MEAN",
@@ -4335,7 +4335,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.062,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_NUM_INSTALMENT_NUMBER_MIN",
@@ -4345,7 +4345,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.062,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_NUM_INSTALMENT_NUMBER_SUM",
@@ -4355,7 +4355,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.062,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_NUM_INSTALMENT_NUMBER_VAR",
@@ -4365,7 +4365,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.063,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_NUM_INSTALMENT_VERSION_MAX",
@@ -4375,7 +4375,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.062,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_NUM_INSTALMENT_VERSION_MEAN",
@@ -4385,7 +4385,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.062,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_NUM_INSTALMENT_VERSION_MIN",
@@ -4395,7 +4395,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.062,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_NUM_INSTALMENT_VERSION_SUM",
@@ -4405,7 +4405,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.062,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_NUM_INSTALMENT_VERSION_VAR",
@@ -4415,7 +4415,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.063,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_SK_ID_PREV_MAX",
@@ -4425,7 +4425,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.062,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_SK_ID_PREV_MEAN",
@@ -4435,7 +4435,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.062,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_SK_ID_PREV_MIN",
@@ -4445,7 +4445,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.062,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_SK_ID_PREV_SUM",
@@ -4455,7 +4455,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.062,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "INST_SK_ID_PREV_VAR",
@@ -4465,7 +4465,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.063,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "LANDAREA_AVG",
@@ -4475,7 +4475,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.386,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "LANDAREA_MEDI",
@@ -4485,7 +4485,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.386,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "LANDAREA_MODE",
@@ -4495,7 +4495,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.386,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "LIVE_CITY_NOT_WORK_CITY",
@@ -4505,7 +4505,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "LIVE_REGION_NOT_WORK_REGION",
@@ -4515,7 +4515,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "LIVINGAPARTMENTS_AVG",
@@ -4525,7 +4525,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.30500000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "LIVINGAPARTMENTS_MEDI",
@@ -4535,7 +4535,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.30500000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "LIVINGAPARTMENTS_MODE",
@@ -4545,7 +4545,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.30500000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "LIVINGAREA_AVG",
@@ -4555,7 +4555,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.478,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "LIVINGAREA_MEDI",
@@ -4565,7 +4565,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.478,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "LIVINGAREA_MODE",
@@ -4575,7 +4575,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.478,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NAME_CONTRACT_TYPE",
@@ -4585,7 +4585,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NAME_EDUCATION_TYPE_Academic degree",
@@ -4595,7 +4595,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NAME_EDUCATION_TYPE_Higher education",
@@ -4605,7 +4605,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NAME_EDUCATION_TYPE_Incomplete higher",
@@ -4615,7 +4615,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NAME_EDUCATION_TYPE_Lower secondary",
@@ -4625,7 +4625,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NAME_EDUCATION_TYPE_Secondary / secondary special",
@@ -4635,7 +4635,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NAME_FAMILY_STATUS_Civil marriage",
@@ -4645,7 +4645,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NAME_FAMILY_STATUS_Married",
@@ -4655,7 +4655,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NAME_FAMILY_STATUS_Separated",
@@ -4665,7 +4665,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NAME_FAMILY_STATUS_Single / not married",
@@ -4675,7 +4675,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NAME_FAMILY_STATUS_Widow",
@@ -4685,7 +4685,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NAME_HOUSING_TYPE_Co-op apartment",
@@ -4695,7 +4695,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NAME_HOUSING_TYPE_House / apartment",
@@ -4705,7 +4705,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NAME_HOUSING_TYPE_Municipal apartment",
@@ -4715,7 +4715,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NAME_HOUSING_TYPE_Office apartment",
@@ -4725,7 +4725,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NAME_HOUSING_TYPE_Rented apartment",
@@ -4735,7 +4735,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NAME_HOUSING_TYPE_With parents",
@@ -4745,7 +4745,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NAME_INCOME_TYPE_Businessman",
@@ -4755,7 +4755,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NAME_INCOME_TYPE_Commercial associate",
@@ -4765,7 +4765,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NAME_INCOME_TYPE_Pensioner",
@@ -4775,7 +4775,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NAME_INCOME_TYPE_State servant",
@@ -4785,7 +4785,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NAME_INCOME_TYPE_Student",
@@ -4795,7 +4795,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NAME_INCOME_TYPE_Unemployed",
@@ -4805,7 +4805,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NAME_INCOME_TYPE_Working",
@@ -4815,7 +4815,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NAME_TYPE_SUITE_Children",
@@ -4825,7 +4825,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NAME_TYPE_SUITE_Family",
@@ -4835,7 +4835,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NAME_TYPE_SUITE_Group of people",
@@ -4845,7 +4845,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NAME_TYPE_SUITE_Other_A",
@@ -4855,7 +4855,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NAME_TYPE_SUITE_Other_B",
@@ -4865,7 +4865,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NAME_TYPE_SUITE_Spouse, partner",
@@ -4875,7 +4875,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NAME_TYPE_SUITE_Unaccompanied",
@@ -4885,7 +4885,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NONLIVINGAPARTMENTS_AVG",
@@ -4895,7 +4895,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.29100000000000004,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NONLIVINGAPARTMENTS_MEDI",
@@ -4905,7 +4905,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.29100000000000004,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NONLIVINGAPARTMENTS_MODE",
@@ -4915,7 +4915,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.29100000000000004,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NONLIVINGAREA_AVG",
@@ -4925,7 +4925,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.43400000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NONLIVINGAREA_MEDI",
@@ -4935,7 +4935,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.43400000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "NONLIVINGAREA_MODE",
@@ -4945,7 +4945,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.43400000000000005,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "OBS_30_CNT_SOCIAL_CIRCLE",
@@ -4955,7 +4955,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.003,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "OBS_60_CNT_SOCIAL_CIRCLE",
@@ -4965,7 +4965,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.003,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "OCCUPATION_TYPE_Accountants",
@@ -4975,7 +4975,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "OCCUPATION_TYPE_Cleaning staff",
@@ -4985,7 +4985,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "OCCUPATION_TYPE_Cooking staff",
@@ -4995,7 +4995,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "OCCUPATION_TYPE_Core staff",
@@ -5005,7 +5005,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "OCCUPATION_TYPE_Drivers",
@@ -5015,7 +5015,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "OCCUPATION_TYPE_HR staff",
@@ -5025,7 +5025,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "OCCUPATION_TYPE_High skill tech staff",
@@ -5035,7 +5035,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "OCCUPATION_TYPE_IT staff",
@@ -5045,7 +5045,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "OCCUPATION_TYPE_Laborers",
@@ -5055,7 +5055,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "OCCUPATION_TYPE_Low-skill Laborers",
@@ -5065,7 +5065,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "OCCUPATION_TYPE_Managers",
@@ -5075,7 +5075,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "OCCUPATION_TYPE_Medicine staff",
@@ -5085,7 +5085,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "OCCUPATION_TYPE_Private service staff",
@@ -5095,7 +5095,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "OCCUPATION_TYPE_Realty agents",
@@ -5105,7 +5105,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "OCCUPATION_TYPE_Sales staff",
@@ -5115,7 +5115,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "OCCUPATION_TYPE_Secretaries",
@@ -5125,7 +5125,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "OCCUPATION_TYPE_Security staff",
@@ -5135,7 +5135,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "OCCUPATION_TYPE_Waiters/barmen staff",
@@ -5145,7 +5145,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Advertising",
@@ -5155,7 +5155,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Agriculture",
@@ -5165,7 +5165,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Bank",
@@ -5175,7 +5175,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Business Entity Type 1",
@@ -5185,7 +5185,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Business Entity Type 2",
@@ -5195,7 +5195,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Business Entity Type 3",
@@ -5205,7 +5205,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Cleaning",
@@ -5215,7 +5215,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Construction",
@@ -5225,7 +5225,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Culture",
@@ -5235,7 +5235,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Electricity",
@@ -5245,7 +5245,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Emergency",
@@ -5255,7 +5255,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Government",
@@ -5265,7 +5265,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Hotel",
@@ -5275,7 +5275,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Housing",
@@ -5285,7 +5285,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Industry: type 1",
@@ -5295,7 +5295,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Industry: type 10",
@@ -5305,7 +5305,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Industry: type 11",
@@ -5315,7 +5315,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Industry: type 12",
@@ -5325,7 +5325,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Industry: type 13",
@@ -5335,7 +5335,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Industry: type 2",
@@ -5345,7 +5345,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Industry: type 3",
@@ -5355,7 +5355,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Industry: type 4",
@@ -5365,7 +5365,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Industry: type 5",
@@ -5375,7 +5375,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Industry: type 6",
@@ -5385,7 +5385,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Industry: type 7",
@@ -5395,7 +5395,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Industry: type 8",
@@ -5405,7 +5405,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Industry: type 9",
@@ -5415,7 +5415,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Insurance",
@@ -5425,7 +5425,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Kindergarten",
@@ -5435,7 +5435,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Legal Services",
@@ -5445,7 +5445,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Medicine",
@@ -5455,7 +5455,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Military",
@@ -5465,7 +5465,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Mobile",
@@ -5475,7 +5475,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Other",
@@ -5485,7 +5485,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Police",
@@ -5495,7 +5495,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Postal",
@@ -5505,7 +5505,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Realtor",
@@ -5515,7 +5515,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Religion",
@@ -5525,7 +5525,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Restaurant",
@@ -5535,7 +5535,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_School",
@@ -5545,7 +5545,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Security",
@@ -5555,7 +5555,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Security Ministries",
@@ -5565,7 +5565,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Self-employed",
@@ -5575,7 +5575,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Services",
@@ -5585,7 +5585,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Telecom",
@@ -5595,7 +5595,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Trade: type 1",
@@ -5605,7 +5605,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Trade: type 2",
@@ -5615,7 +5615,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Trade: type 3",
@@ -5625,7 +5625,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Trade: type 4",
@@ -5635,7 +5635,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Trade: type 5",
@@ -5645,7 +5645,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Trade: type 6",
@@ -5655,7 +5655,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Trade: type 7",
@@ -5665,7 +5665,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Transport: type 1",
@@ -5675,7 +5675,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Transport: type 2",
@@ -5685,7 +5685,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Transport: type 3",
@@ -5695,7 +5695,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_Transport: type 4",
@@ -5705,7 +5705,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_University",
@@ -5715,7 +5715,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "ORGANIZATION_TYPE_XNA",
@@ -5725,7 +5725,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "OWN_CAR_AGE",
@@ -5735,7 +5735,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.652,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PAYMENT_RATE",
@@ -5745,7 +5745,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_CNT_INSTALMENT_FUTURE_MAX",
@@ -5755,7 +5755,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_CNT_INSTALMENT_FUTURE_MEAN",
@@ -5765,7 +5765,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_CNT_INSTALMENT_FUTURE_MIN",
@@ -5775,7 +5775,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_CNT_INSTALMENT_FUTURE_SUM",
@@ -5785,7 +5785,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_CNT_INSTALMENT_FUTURE_VAR",
@@ -5795,7 +5795,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.065,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_CNT_INSTALMENT_MAX",
@@ -5805,7 +5805,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_CNT_INSTALMENT_MEAN",
@@ -5815,7 +5815,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_CNT_INSTALMENT_MIN",
@@ -5825,7 +5825,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_CNT_INSTALMENT_SUM",
@@ -5835,7 +5835,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_CNT_INSTALMENT_VAR",
@@ -5845,7 +5845,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.065,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_MONTHS_BALANCE_MAX",
@@ -5855,7 +5855,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_MONTHS_BALANCE_MEAN",
@@ -5865,7 +5865,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_MONTHS_BALANCE_MIN",
@@ -5875,7 +5875,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_MONTHS_BALANCE_SUM",
@@ -5885,7 +5885,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_MONTHS_BALANCE_VAR",
@@ -5895,7 +5895,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.065,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_NAME_CONTRACT_STATUS_Active_MEAN",
@@ -5905,7 +5905,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_NAME_CONTRACT_STATUS_Amortized debt_MEAN",
@@ -5915,7 +5915,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_NAME_CONTRACT_STATUS_Approved_MEAN",
@@ -5925,7 +5925,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_NAME_CONTRACT_STATUS_Canceled_MEAN",
@@ -5935,7 +5935,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_NAME_CONTRACT_STATUS_Completed_MEAN",
@@ -5945,7 +5945,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_NAME_CONTRACT_STATUS_Demand_MEAN",
@@ -5955,7 +5955,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_NAME_CONTRACT_STATUS_Returned to the store_MEAN",
@@ -5965,7 +5965,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_NAME_CONTRACT_STATUS_Signed_MEAN",
@@ -5975,7 +5975,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_NAME_CONTRACT_STATUS_XNA_MEAN",
@@ -5985,7 +5985,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_SK_DPD_DEF_MAX",
@@ -5995,7 +5995,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_SK_DPD_DEF_MEAN",
@@ -6005,7 +6005,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_SK_DPD_DEF_MIN",
@@ -6015,7 +6015,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_SK_DPD_DEF_SUM",
@@ -6025,7 +6025,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_SK_DPD_DEF_VAR",
@@ -6035,7 +6035,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.065,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_SK_DPD_MAX",
@@ -6045,7 +6045,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_SK_DPD_MEAN",
@@ -6055,7 +6055,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_SK_DPD_MIN",
@@ -6065,7 +6065,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_SK_DPD_SUM",
@@ -6075,7 +6075,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_SK_DPD_VAR",
@@ -6085,7 +6085,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.065,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_SK_ID_PREV_MAX",
@@ -6095,7 +6095,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_SK_ID_PREV_MEAN",
@@ -6105,7 +6105,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_SK_ID_PREV_MIN",
@@ -6115,7 +6115,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_SK_ID_PREV_SUM",
@@ -6125,7 +6125,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "POS_SK_ID_PREV_VAR",
@@ -6135,7 +6135,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.065,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_AMT_ANNUITY_MAX",
@@ -6145,7 +6145,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.062,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_AMT_ANNUITY_MEAN",
@@ -6155,7 +6155,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.062,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_AMT_ANNUITY_MIN",
@@ -6165,7 +6165,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.062,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_AMT_ANNUITY_SUM",
@@ -6175,7 +6175,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_AMT_ANNUITY_VAR",
@@ -6185,7 +6185,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.27,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_AMT_APPLICATION_MAX",
@@ -6195,7 +6195,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_AMT_APPLICATION_MEAN",
@@ -6205,7 +6205,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_AMT_APPLICATION_MIN",
@@ -6215,7 +6215,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_AMT_APPLICATION_SUM",
@@ -6225,7 +6225,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_AMT_APPLICATION_VAR",
@@ -6235,7 +6235,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.236,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_AMT_CREDIT_MAX",
@@ -6245,7 +6245,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_AMT_CREDIT_MEAN",
@@ -6255,7 +6255,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_AMT_CREDIT_MIN",
@@ -6265,7 +6265,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_AMT_CREDIT_SUM",
@@ -6275,7 +6275,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_AMT_CREDIT_VAR",
@@ -6285,7 +6285,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.236,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_AMT_DOWN_PAYMENT_MAX",
@@ -6295,7 +6295,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.114,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_AMT_DOWN_PAYMENT_MEAN",
@@ -6305,7 +6305,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.114,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_AMT_DOWN_PAYMENT_MIN",
@@ -6315,7 +6315,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.114,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_AMT_DOWN_PAYMENT_SUM",
@@ -6325,7 +6325,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_AMT_DOWN_PAYMENT_VAR",
@@ -6335,7 +6335,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.463,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_AMT_GOODS_PRICE_MAX",
@@ -6345,7 +6345,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.067,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_AMT_GOODS_PRICE_MEAN",
@@ -6355,7 +6355,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.067,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_AMT_GOODS_PRICE_MIN",
@@ -6365,7 +6365,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.067,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_AMT_GOODS_PRICE_SUM",
@@ -6375,7 +6375,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_AMT_GOODS_PRICE_VAR",
@@ -6385,7 +6385,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.269,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_CHANNEL_TYPE_AP+ (Cash loan)_MEAN",
@@ -6395,7 +6395,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_CHANNEL_TYPE_Car dealer_MEAN",
@@ -6405,7 +6405,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_CHANNEL_TYPE_Channel of corporate sales_MEAN",
@@ -6415,7 +6415,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_CHANNEL_TYPE_Contact center_MEAN",
@@ -6425,7 +6425,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_CHANNEL_TYPE_Country-wide_MEAN",
@@ -6435,7 +6435,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_CHANNEL_TYPE_Credit and cash offices_MEAN",
@@ -6445,7 +6445,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_CHANNEL_TYPE_Regional / Local_MEAN",
@@ -6455,7 +6455,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_CHANNEL_TYPE_Stone_MEAN",
@@ -6465,7 +6465,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_CNT_PAYMENT_MAX",
@@ -6475,7 +6475,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.062,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_CNT_PAYMENT_MEAN",
@@ -6485,7 +6485,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.062,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_CNT_PAYMENT_MIN",
@@ -6495,7 +6495,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.062,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_CNT_PAYMENT_SUM",
@@ -6505,7 +6505,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_CNT_PAYMENT_VAR",
@@ -6515,7 +6515,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.27,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_CODE_REJECT_REASON_CLIENT_MEAN",
@@ -6525,7 +6525,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_CODE_REJECT_REASON_HC_MEAN",
@@ -6535,7 +6535,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_CODE_REJECT_REASON_LIMIT_MEAN",
@@ -6545,7 +6545,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_CODE_REJECT_REASON_SCOFR_MEAN",
@@ -6555,7 +6555,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_CODE_REJECT_REASON_SCO_MEAN",
@@ -6565,7 +6565,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_CODE_REJECT_REASON_SYSTEM_MEAN",
@@ -6575,7 +6575,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_CODE_REJECT_REASON_VERIF_MEAN",
@@ -6585,7 +6585,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_CODE_REJECT_REASON_XAP_MEAN",
@@ -6595,7 +6595,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_CODE_REJECT_REASON_XNA_MEAN",
@@ -6605,7 +6605,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_DAYS_DECISION_MAX",
@@ -6615,7 +6615,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_DAYS_DECISION_MEAN",
@@ -6625,7 +6625,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_DAYS_DECISION_MIN",
@@ -6635,7 +6635,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_DAYS_DECISION_SUM",
@@ -6645,7 +6645,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_DAYS_DECISION_VAR",
@@ -6655,7 +6655,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.236,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_DAYS_FIRST_DRAWING_MAX",
@@ -6665,7 +6665,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_DAYS_FIRST_DRAWING_MEAN",
@@ -6675,7 +6675,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_DAYS_FIRST_DRAWING_MIN",
@@ -6685,7 +6685,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_DAYS_FIRST_DRAWING_SUM",
@@ -6695,7 +6695,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_DAYS_FIRST_DRAWING_VAR",
@@ -6705,7 +6705,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.313,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_DAYS_FIRST_DUE_MAX",
@@ -6715,7 +6715,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_DAYS_FIRST_DUE_MEAN",
@@ -6725,7 +6725,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_DAYS_FIRST_DUE_MIN",
@@ -6735,7 +6735,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_DAYS_FIRST_DUE_SUM",
@@ -6745,7 +6745,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_DAYS_FIRST_DUE_VAR",
@@ -6755,7 +6755,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.313,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_DAYS_LAST_DUE_1ST_VERSION_MAX",
@@ -6765,7 +6765,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_DAYS_LAST_DUE_1ST_VERSION_MEAN",
@@ -6775,7 +6775,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_DAYS_LAST_DUE_1ST_VERSION_MIN",
@@ -6785,7 +6785,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_DAYS_LAST_DUE_1ST_VERSION_SUM",
@@ -6795,7 +6795,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_DAYS_LAST_DUE_1ST_VERSION_VAR",
@@ -6805,7 +6805,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.313,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_DAYS_LAST_DUE_MAX",
@@ -6815,7 +6815,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_DAYS_LAST_DUE_MEAN",
@@ -6825,7 +6825,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_DAYS_LAST_DUE_MIN",
@@ -6835,7 +6835,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_DAYS_LAST_DUE_SUM",
@@ -6845,7 +6845,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_DAYS_LAST_DUE_VAR",
@@ -6855,7 +6855,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.313,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_DAYS_TERMINATION_MAX",
@@ -6865,7 +6865,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_DAYS_TERMINATION_MEAN",
@@ -6875,7 +6875,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_DAYS_TERMINATION_MIN",
@@ -6885,7 +6885,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_DAYS_TERMINATION_SUM",
@@ -6895,7 +6895,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_DAYS_TERMINATION_VAR",
@@ -6905,7 +6905,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.313,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_FLAG_LAST_APPL_PER_CONTRACT_N_MEAN",
@@ -6915,7 +6915,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_FLAG_LAST_APPL_PER_CONTRACT_Y_MEAN",
@@ -6925,7 +6925,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_HOUR_APPR_PROCESS_START_MAX",
@@ -6935,7 +6935,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_HOUR_APPR_PROCESS_START_MEAN",
@@ -6945,7 +6945,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_HOUR_APPR_PROCESS_START_MIN",
@@ -6955,7 +6955,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_HOUR_APPR_PROCESS_START_SUM",
@@ -6965,7 +6965,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_HOUR_APPR_PROCESS_START_VAR",
@@ -6975,7 +6975,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.236,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CASH_LOAN_PURPOSE_Building a house or an annex_MEAN",
@@ -6985,7 +6985,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CASH_LOAN_PURPOSE_Business development_MEAN",
@@ -6995,7 +6995,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CASH_LOAN_PURPOSE_Buying a garage_MEAN",
@@ -7005,7 +7005,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CASH_LOAN_PURPOSE_Buying a holiday home / land_MEAN",
@@ -7015,7 +7015,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CASH_LOAN_PURPOSE_Buying a home_MEAN",
@@ -7025,7 +7025,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CASH_LOAN_PURPOSE_Buying a new car_MEAN",
@@ -7035,7 +7035,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CASH_LOAN_PURPOSE_Buying a used car_MEAN",
@@ -7045,7 +7045,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CASH_LOAN_PURPOSE_Car repairs_MEAN",
@@ -7055,7 +7055,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CASH_LOAN_PURPOSE_Education_MEAN",
@@ -7065,7 +7065,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CASH_LOAN_PURPOSE_Everyday expenses_MEAN",
@@ -7075,7 +7075,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CASH_LOAN_PURPOSE_Furniture_MEAN",
@@ -7085,7 +7085,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CASH_LOAN_PURPOSE_Gasification / water supply_MEAN",
@@ -7095,7 +7095,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CASH_LOAN_PURPOSE_Hobby_MEAN",
@@ -7105,7 +7105,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CASH_LOAN_PURPOSE_Journey_MEAN",
@@ -7115,7 +7115,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CASH_LOAN_PURPOSE_Medicine_MEAN",
@@ -7125,7 +7125,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CASH_LOAN_PURPOSE_Money for a third person_MEAN",
@@ -7135,7 +7135,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CASH_LOAN_PURPOSE_Other_MEAN",
@@ -7145,7 +7145,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CASH_LOAN_PURPOSE_Payments on other loans_MEAN",
@@ -7155,7 +7155,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CASH_LOAN_PURPOSE_Purchase of electronic equipment_MEAN",
@@ -7165,7 +7165,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CASH_LOAN_PURPOSE_Refusal to name the goal_MEAN",
@@ -7175,7 +7175,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CASH_LOAN_PURPOSE_Repairs_MEAN",
@@ -7185,7 +7185,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CASH_LOAN_PURPOSE_Urgent needs_MEAN",
@@ -7195,7 +7195,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CASH_LOAN_PURPOSE_Wedding / gift / holiday_MEAN",
@@ -7205,7 +7205,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CASH_LOAN_PURPOSE_XAP_MEAN",
@@ -7215,7 +7215,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CASH_LOAN_PURPOSE_XNA_MEAN",
@@ -7225,7 +7225,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CLIENT_TYPE_New_MEAN",
@@ -7235,7 +7235,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CLIENT_TYPE_Refreshed_MEAN",
@@ -7245,7 +7245,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CLIENT_TYPE_Repeater_MEAN",
@@ -7255,7 +7255,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CLIENT_TYPE_XNA_MEAN",
@@ -7265,7 +7265,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CONTRACT_STATUS_Approved_MEAN",
@@ -7275,7 +7275,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CONTRACT_STATUS_Canceled_MEAN",
@@ -7285,7 +7285,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CONTRACT_STATUS_Refused_MEAN",
@@ -7295,7 +7295,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CONTRACT_STATUS_Unused offer_MEAN",
@@ -7305,7 +7305,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CONTRACT_TYPE_Cash loans_MEAN",
@@ -7315,7 +7315,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CONTRACT_TYPE_Consumer loans_MEAN",
@@ -7325,7 +7325,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CONTRACT_TYPE_Revolving loans_MEAN",
@@ -7335,7 +7335,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_CONTRACT_TYPE_XNA_MEAN",
@@ -7345,7 +7345,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_GOODS_CATEGORY_Additional Service_MEAN",
@@ -7355,7 +7355,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_GOODS_CATEGORY_Animals_MEAN",
@@ -7365,7 +7365,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_GOODS_CATEGORY_Audio/Video_MEAN",
@@ -7375,7 +7375,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_GOODS_CATEGORY_Auto Accessories_MEAN",
@@ -7385,7 +7385,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_GOODS_CATEGORY_Clothing and Accessories_MEAN",
@@ -7395,7 +7395,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_GOODS_CATEGORY_Computers_MEAN",
@@ -7405,7 +7405,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_GOODS_CATEGORY_Construction Materials_MEAN",
@@ -7415,7 +7415,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_GOODS_CATEGORY_Consumer Electronics_MEAN",
@@ -7425,7 +7425,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_GOODS_CATEGORY_Direct Sales_MEAN",
@@ -7435,7 +7435,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_GOODS_CATEGORY_Education_MEAN",
@@ -7445,7 +7445,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_GOODS_CATEGORY_Fitness_MEAN",
@@ -7455,7 +7455,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_GOODS_CATEGORY_Furniture_MEAN",
@@ -7465,7 +7465,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_GOODS_CATEGORY_Gardening_MEAN",
@@ -7475,7 +7475,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_GOODS_CATEGORY_Homewares_MEAN",
@@ -7485,7 +7485,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_GOODS_CATEGORY_Insurance_MEAN",
@@ -7495,7 +7495,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_GOODS_CATEGORY_Jewelry_MEAN",
@@ -7505,7 +7505,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_GOODS_CATEGORY_Medical Supplies_MEAN",
@@ -7515,7 +7515,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_GOODS_CATEGORY_Medicine_MEAN",
@@ -7525,7 +7525,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_GOODS_CATEGORY_Mobile_MEAN",
@@ -7535,7 +7535,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_GOODS_CATEGORY_Office Appliances_MEAN",
@@ -7545,7 +7545,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_GOODS_CATEGORY_Other_MEAN",
@@ -7555,7 +7555,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_GOODS_CATEGORY_Photo / Cinema Equipment_MEAN",
@@ -7565,7 +7565,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_GOODS_CATEGORY_Sport and Leisure_MEAN",
@@ -7575,7 +7575,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_GOODS_CATEGORY_Tourism_MEAN",
@@ -7585,7 +7585,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_GOODS_CATEGORY_Vehicles_MEAN",
@@ -7595,7 +7595,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_GOODS_CATEGORY_Weapon_MEAN",
@@ -7605,7 +7605,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_GOODS_CATEGORY_XNA_MEAN",
@@ -7615,7 +7615,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_PAYMENT_TYPE_Cash through the bank_MEAN",
@@ -7625,7 +7625,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_PAYMENT_TYPE_Cashless from the account of the employer_MEAN",
@@ -7635,7 +7635,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_PAYMENT_TYPE_Non-cash from your account_MEAN",
@@ -7645,7 +7645,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_PAYMENT_TYPE_XNA_MEAN",
@@ -7655,7 +7655,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_PORTFOLIO_Cards_MEAN",
@@ -7665,7 +7665,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_PORTFOLIO_Cars_MEAN",
@@ -7675,7 +7675,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_PORTFOLIO_Cash_MEAN",
@@ -7685,7 +7685,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_PORTFOLIO_POS_MEAN",
@@ -7695,7 +7695,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_PORTFOLIO_XNA_MEAN",
@@ -7705,7 +7705,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_PRODUCT_TYPE_XNA_MEAN",
@@ -7715,7 +7715,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_PRODUCT_TYPE_walk-in_MEAN",
@@ -7725,7 +7725,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_PRODUCT_TYPE_x-sell_MEAN",
@@ -7735,7 +7735,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_SELLER_INDUSTRY_Auto technology_MEAN",
@@ -7745,7 +7745,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_SELLER_INDUSTRY_Clothing_MEAN",
@@ -7755,7 +7755,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_SELLER_INDUSTRY_Connectivity_MEAN",
@@ -7765,7 +7765,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_SELLER_INDUSTRY_Construction_MEAN",
@@ -7775,7 +7775,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_SELLER_INDUSTRY_Consumer electronics_MEAN",
@@ -7785,7 +7785,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_SELLER_INDUSTRY_Furniture_MEAN",
@@ -7795,7 +7795,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_SELLER_INDUSTRY_Industry_MEAN",
@@ -7805,7 +7805,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_SELLER_INDUSTRY_Jewelry_MEAN",
@@ -7815,7 +7815,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_SELLER_INDUSTRY_MLM partners_MEAN",
@@ -7825,7 +7825,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_SELLER_INDUSTRY_Tourism_MEAN",
@@ -7835,7 +7835,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_SELLER_INDUSTRY_XNA_MEAN",
@@ -7845,7 +7845,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_TYPE_SUITE_Children_MEAN",
@@ -7855,7 +7855,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_TYPE_SUITE_Family_MEAN",
@@ -7865,7 +7865,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_TYPE_SUITE_Group of people_MEAN",
@@ -7875,7 +7875,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_TYPE_SUITE_Other_A_MEAN",
@@ -7885,7 +7885,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_TYPE_SUITE_Other_B_MEAN",
@@ -7895,7 +7895,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_TYPE_SUITE_Spouse, partner_MEAN",
@@ -7905,7 +7905,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_TYPE_SUITE_Unaccompanied_MEAN",
@@ -7915,7 +7915,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_TYPE_SUITE_nan_MEAN",
@@ -7925,7 +7925,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_YIELD_GROUP_XNA_MEAN",
@@ -7935,7 +7935,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_YIELD_GROUP_high_MEAN",
@@ -7945,7 +7945,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_YIELD_GROUP_low_action_MEAN",
@@ -7955,7 +7955,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_YIELD_GROUP_low_normal_MEAN",
@@ -7965,7 +7965,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NAME_YIELD_GROUP_middle_MEAN",
@@ -7975,7 +7975,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NFLAG_INSURED_ON_APPROVAL_MAX",
@@ -7985,7 +7985,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NFLAG_INSURED_ON_APPROVAL_MEAN",
@@ -7995,7 +7995,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NFLAG_INSURED_ON_APPROVAL_MIN",
@@ -8005,7 +8005,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.064,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NFLAG_INSURED_ON_APPROVAL_SUM",
@@ -8015,7 +8015,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NFLAG_INSURED_ON_APPROVAL_VAR",
@@ -8025,7 +8025,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.313,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NFLAG_LAST_APPL_IN_DAY_MAX",
@@ -8035,7 +8035,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NFLAG_LAST_APPL_IN_DAY_MEAN",
@@ -8045,7 +8045,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NFLAG_LAST_APPL_IN_DAY_MIN",
@@ -8055,7 +8055,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NFLAG_LAST_APPL_IN_DAY_SUM",
@@ -8065,7 +8065,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_NFLAG_LAST_APPL_IN_DAY_VAR",
@@ -8075,7 +8075,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.236,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_PRODUCT_COMBINATION_Card Street_MEAN",
@@ -8085,7 +8085,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_PRODUCT_COMBINATION_Card X-Sell_MEAN",
@@ -8095,7 +8095,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_PRODUCT_COMBINATION_Cash Street: high_MEAN",
@@ -8105,7 +8105,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_PRODUCT_COMBINATION_Cash Street: low_MEAN",
@@ -8115,7 +8115,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_PRODUCT_COMBINATION_Cash Street: middle_MEAN",
@@ -8125,7 +8125,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_PRODUCT_COMBINATION_Cash X-Sell: high_MEAN",
@@ -8135,7 +8135,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_PRODUCT_COMBINATION_Cash X-Sell: low_MEAN",
@@ -8145,7 +8145,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_PRODUCT_COMBINATION_Cash X-Sell: middle_MEAN",
@@ -8155,7 +8155,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_PRODUCT_COMBINATION_Cash_MEAN",
@@ -8165,7 +8165,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_PRODUCT_COMBINATION_POS household with interest_MEAN",
@@ -8175,7 +8175,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_PRODUCT_COMBINATION_POS household without interest_MEAN",
@@ -8185,7 +8185,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_PRODUCT_COMBINATION_POS industry with interest_MEAN",
@@ -8195,7 +8195,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_PRODUCT_COMBINATION_POS industry without interest_MEAN",
@@ -8205,7 +8205,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_PRODUCT_COMBINATION_POS mobile with interest_MEAN",
@@ -8215,7 +8215,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_PRODUCT_COMBINATION_POS mobile without interest_MEAN",
@@ -8225,7 +8225,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_PRODUCT_COMBINATION_POS other with interest_MEAN",
@@ -8235,7 +8235,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_PRODUCT_COMBINATION_POS others without interest_MEAN",
@@ -8245,7 +8245,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_PRODUCT_COMBINATION_nan_MEAN",
@@ -8255,7 +8255,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_RATE_DOWN_PAYMENT_MAX",
@@ -8265,7 +8265,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.114,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_RATE_DOWN_PAYMENT_MEAN",
@@ -8275,7 +8275,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.114,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_RATE_DOWN_PAYMENT_MIN",
@@ -8285,7 +8285,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.114,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_RATE_DOWN_PAYMENT_SUM",
@@ -8295,7 +8295,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_RATE_DOWN_PAYMENT_VAR",
@@ -8305,7 +8305,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.463,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_RATE_INTEREST_PRIMARY_MAX",
@@ -8315,7 +8315,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.010000000000000009,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_RATE_INTEREST_PRIMARY_MEAN",
@@ -8325,7 +8325,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.010000000000000009,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_RATE_INTEREST_PRIMARY_MIN",
@@ -8335,7 +8335,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.010000000000000009,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_RATE_INTEREST_PRIMARY_SUM",
@@ -8345,7 +8345,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_RATE_INTEREST_PRIMARY_VAR",
@@ -8355,7 +8355,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_RATE_INTEREST_PRIVILEGED_MAX",
@@ -8365,7 +8365,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.010000000000000009,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_RATE_INTEREST_PRIVILEGED_MEAN",
@@ -8375,7 +8375,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.010000000000000009,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_RATE_INTEREST_PRIVILEGED_MIN",
@@ -8385,7 +8385,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.010000000000000009,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_RATE_INTEREST_PRIVILEGED_SUM",
@@ -8395,7 +8395,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_RATE_INTEREST_PRIVILEGED_VAR",
@@ -8405,7 +8405,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_SELLERPLACE_AREA_MAX",
@@ -8415,7 +8415,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_SELLERPLACE_AREA_MEAN",
@@ -8425,7 +8425,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_SELLERPLACE_AREA_MIN",
@@ -8435,7 +8435,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_SELLERPLACE_AREA_SUM",
@@ -8445,7 +8445,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_SELLERPLACE_AREA_VAR",
@@ -8455,7 +8455,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.236,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_SK_ID_PREV_MAX",
@@ -8465,7 +8465,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_SK_ID_PREV_MEAN",
@@ -8475,7 +8475,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_SK_ID_PREV_MIN",
@@ -8485,7 +8485,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_SK_ID_PREV_SUM",
@@ -8495,7 +8495,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_SK_ID_PREV_VAR",
@@ -8505,7 +8505,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.236,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_WEEKDAY_APPR_PROCESS_START_FRIDAY_MEAN",
@@ -8515,7 +8515,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_WEEKDAY_APPR_PROCESS_START_MONDAY_MEAN",
@@ -8525,7 +8525,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_WEEKDAY_APPR_PROCESS_START_SATURDAY_MEAN",
@@ -8535,7 +8535,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_WEEKDAY_APPR_PROCESS_START_SUNDAY_MEAN",
@@ -8545,7 +8545,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_WEEKDAY_APPR_PROCESS_START_THURSDAY_MEAN",
@@ -8555,7 +8555,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_WEEKDAY_APPR_PROCESS_START_TUESDAY_MEAN",
@@ -8565,7 +8565,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "PREV_WEEKDAY_APPR_PROCESS_START_WEDNESDAY_MEAN",
@@ -8575,7 +8575,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": -0.061,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "REGION_POPULATION_RELATIVE",
@@ -8585,7 +8585,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "REGION_RATING_CLIENT",
@@ -8595,7 +8595,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "REGION_RATING_CLIENT_W_CITY",
@@ -8605,7 +8605,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "REG_CITY_NOT_LIVE_CITY",
@@ -8615,7 +8615,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "REG_CITY_NOT_WORK_CITY",
@@ -8625,7 +8625,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "REG_REGION_NOT_LIVE_REGION",
@@ -8635,7 +8635,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "REG_REGION_NOT_WORK_REGION",
@@ -8645,7 +8645,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "SK_ID_CURR",
@@ -8655,7 +8655,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "TARGET",
@@ -8665,7 +8665,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 1.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "TOTALAREA_MODE",
@@ -8675,7 +8675,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.488,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "WALLSMATERIAL_MODE_Block",
@@ -8685,7 +8685,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "WALLSMATERIAL_MODE_Mixed",
@@ -8695,7 +8695,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "WALLSMATERIAL_MODE_Monolithic",
@@ -8705,7 +8705,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "WALLSMATERIAL_MODE_Others",
@@ -8715,7 +8715,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "WALLSMATERIAL_MODE_Panel",
@@ -8725,7 +8725,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "WALLSMATERIAL_MODE_Stone, brick",
@@ -8735,7 +8735,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "WALLSMATERIAL_MODE_Wooden",
@@ -8745,7 +8745,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "WEEKDAY_APPR_PROCESS_START_FRIDAY",
@@ -8755,7 +8755,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "WEEKDAY_APPR_PROCESS_START_MONDAY",
@@ -8765,7 +8765,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "WEEKDAY_APPR_PROCESS_START_SATURDAY",
@@ -8775,7 +8775,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "WEEKDAY_APPR_PROCESS_START_SUNDAY",
@@ -8785,7 +8785,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "WEEKDAY_APPR_PROCESS_START_THURSDAY",
@@ -8795,7 +8795,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "WEEKDAY_APPR_PROCESS_START_TUESDAY",
@@ -8805,7 +8805,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "WEEKDAY_APPR_PROCESS_START_WEDNESDAY",
@@ -8815,7 +8815,7 @@
       "prod_missing_rate": 0.0,
       "missing_rate_delta": 0.0,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "YEARS_BEGINEXPLUATATION_AVG",
@@ -8825,7 +8825,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.485,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "YEARS_BEGINEXPLUATATION_MEDI",
@@ -8835,7 +8835,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.485,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "YEARS_BEGINEXPLUATATION_MODE",
@@ -8845,7 +8845,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.485,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "YEARS_BUILD_AVG",
@@ -8855,7 +8855,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.32199999999999995,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "YEARS_BUILD_MEDI",
@@ -8865,7 +8865,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.32199999999999995,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     },
     {
       "feature": "YEARS_BUILD_MODE",
@@ -8875,7 +8875,7 @@
       "prod_missing_rate": 1.0,
       "missing_rate_delta": 0.32199999999999995,
       "ref_n": 1000,
-      "prod_n": 1
+      "prod_n": 2000
     }
   ],
   "thresholds": {
@@ -8883,7 +8883,7 @@
     "psi_medium": 0.2,
     "psi_high": 0.3
   },
-  "generated_at_utc": "2026-01-22T17:42:00.733989+00:00",
+  "generated_at_utc": "2026-01-28T20:36:24.350171+00:00",
   "db_path": "C:\\Users\\thoma\\Documents\\Openclassroom\\Projet-8\\data\\prod\\predictions.sqlite",
   "ref_csv": "C:\\Users\\thoma\\Documents\\Openclassroom\\Projet-8\\data\\reference\\reference_sample.csv",
   "prod_limit": 2000
