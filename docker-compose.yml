@@ -1,0 +1,23 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      P8_DB_PATH: /data/predictions.sqlite
+      P8_ARTIFACTS_DIR: /app/app/artifacts
+      P8_STRICT_INPUT: "1"
+    volumes:
+      - ./data/prod:/data
+      - ./app/artifacts:/app/app/artifacts:ro
+
+  dashboard:
+    build: .
+    command: ["uv", "run", "streamlit", "run", "monitoring/dashboard.py", "--server.address=0.0.0.0", "--server.port=8501"]
+    ports:
+      - "8501:8501"
+    environment:
+      P8_DB_PATH: /data/predictions.sqlite
+    volumes:
+      - ./data/prod:/data
+      - ./outputs:/app/outputs

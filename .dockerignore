@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+data/
+outputs/
+mlruns/
+mlflow.db
+*.db
+*.sqlite
+*.pdf
+*.ipynb
+tests/
