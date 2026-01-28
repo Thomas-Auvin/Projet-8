@@ -30,3 +30,8 @@ app/artifacts/*.bin
 # OS
 .DS_Store
 Thumbs.db
+
+mlflow.db
+*.db
+*.sqlite
+*.pdf
