@@ -1,3 +1,4 @@
+# monitoring/run_drift.py
 from __future__ import annotations
 
 import argparse
@@ -36,7 +37,7 @@ def get_output_dir() -> Path:
 def load_prod_features(db_path: Path, limit: int | None = 2000) -> pd.DataFrame:
     """
     Lit la table predictions et reconstruit un DataFrame depuis input_json.
-    Par défaut on prend les 'limit' dernières lignes (suffisant pour monitoring).
+    Par défaut on prend les 'limit' dernières lignes.
     """
     if not db_path.exists():
         raise FileNotFoundError(f"DB not found: {db_path}")
@@ -102,7 +103,6 @@ def main() -> None:
         default="",
         help="Chemin du JSON de sortie. Par défaut: outputs/monitoring/drift_report.json",
     )
-
     args = parser.parse_args()
 
     db_path = Path(args.db_path).expanduser().resolve()
