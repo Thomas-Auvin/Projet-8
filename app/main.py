@@ -16,6 +16,7 @@ from typing import Any
 
 from fastapi import FastAPI, HTTPException, UploadFile, File
 from fastapi.responses import RedirectResponse,FileResponse
+from fastapi.staticfiles import StaticFiles
 
 from app.model_loader import LoadedModel, load_model
 from app.schemas import (
@@ -172,11 +173,17 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(title="Credit Scoring API", version="0.1.0", lifespan=lifespan)
 
-EXAMPLES_DIR = (Path(__file__).parent / "examples").resolve()
+EXAMPLES_DIR = (Path(__file__).resolve().parent / "examples").resolve()  # app/examples
+if not EXAMPLES_DIR.is_dir():
+    EXAMPLES_DIR = (Path(__file__).resolve().parent.parent / "examples").resolve()  # repo/examples
+
+print(f"✅ EXAMPLES_DIR = {EXAMPLES_DIR} (exists={EXAMPLES_DIR.is_dir()})")
 
 
 @app.get("/examples")
 def list_examples() -> dict[str, Any]:
+    if not EXAMPLES_DIR.is_dir():
+        return {"files": [], "error": f"Examples dir not found: {EXAMPLES_DIR}"}
     files = sorted([p.name for p in EXAMPLES_DIR.glob("*") if p.is_file()])
     return {"files": files}
 
@@ -185,7 +192,7 @@ def list_examples() -> dict[str, Any]:
 def example_csv():
     path = EXAMPLES_DIR / "example_input_compact.csv"
     if not path.exists():
-        raise HTTPException(status_code=404, detail="Example CSV not found")
+        raise HTTPException(status_code=404, detail=f"Example CSV not found: {path}")
     return FileResponse(path, media_type="text/csv", filename=path.name)
 
 
@@ -193,7 +200,7 @@ def example_csv():
 def example_json() -> dict[str, Any]:
     path = EXAMPLES_DIR / "example_input_compact.json"
     if not path.exists():
-        raise HTTPException(status_code=404, detail="Example JSON not found")
+        raise HTTPException(status_code=404, detail=f"Example JSON not found: {path}")
     return json.loads(path.read_text(encoding="utf-8"))
 
 

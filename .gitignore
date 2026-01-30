@@ -35,3 +35,7 @@ mlflow.db
 *.db
 *.sqlite
 *.pdf
+
+# --- Allow API example files (needed on HF) ---
+!app/examples/example_input_compact.csv
+!app/examples/example_input_compact.json
