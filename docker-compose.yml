@@ -2,14 +2,14 @@ services:
   api:
     build: .
     ports:
-      - "8000:8000"
+      - "8000:7860"
     environment:
       P8_DB_PATH: /data/predictions.sqlite
-      P8_ARTIFACTS_DIR: /app/app/artifacts
+      P8_ARTIFACTS_DIR: /home/user/app/app/artifacts
       P8_STRICT_INPUT: "1"
     volumes:
       - ./data/prod:/data
-      - ./app/artifacts:/app/app/artifacts:ro
+      - ./app/artifacts:/home/user/app/app/artifacts:ro
 
   dashboard:
     build: .
@@ -20,4 +20,4 @@ services:
       P8_DB_PATH: /data/predictions.sqlite
     volumes:
       - ./data/prod:/data
-      - ./outputs:/app/outputs
+      - ./outputs:/home/user/app/outputs
