@@ -9,3 +9,14 @@ mlflow.db
 *.pdf
 *.ipynb
 tests/
+data/*
+!data/reference/
+!data/reference/reference_sample.csv
+!data/reference/requested_config.json
+!data/reference/feature_importances.csv
+outputs/*
+!outputs/
+!outputs/monitoring/
+!outputs/monitoring/drift_report.json
+!outputs/perf/
+!outputs/perf/bench_baseline.json
