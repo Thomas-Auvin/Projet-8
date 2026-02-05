@@ -14,9 +14,8 @@ from pathlib import Path
 from uuid import uuid4
 from typing import Any
 
-from fastapi import FastAPI, HTTPException, UploadFile, File
+from fastapi import FastAPI, HTTPException, UploadFile, File, BackgroundTasks
 from fastapi.responses import RedirectResponse,FileResponse
-from fastapi.staticfiles import StaticFiles
 
 from app.model_loader import LoadedModel, load_model
 from app.schemas import (
@@ -64,20 +63,44 @@ def _sigmoid_vec(x: np.ndarray) -> np.ndarray:
 def _strict_input_enabled() -> bool:
     return os.getenv("P8_STRICT_INPUT", "1") == "1"
 
+def _async_logging_enabled() -> bool:
+    # 1 = activé (par défaut), 0 = désactivé
+    return os.getenv("P8_ASYNC_LOG", "1") == "1"
+
 
 def _json_safe_features(d: dict[str, Any]) -> dict[str, Any]:
-    """Convertit NaN/Inf en None pour pouvoir sérialiser en JSON strict."""
     out: dict[str, Any] = {}
     for k, v in d.items():
+        # bool numpy
+        if isinstance(v, (bool, np.bool_)):
+            out[k] = bool(v)
+            continue
+        # int numpy
+        if isinstance(v, (int, np.integer)):
+            out[k] = int(v)
+            continue
+        # float numpy
         if isinstance(v, (float, np.floating)):
             fv = float(v)
-            if math.isnan(fv) or math.isinf(fv):
-                out[k] = None
-            else:
-                out[k] = fv
-        else:
-            out[k] = v
+            out[k] = None if (math.isnan(fv) or math.isinf(fv)) else fv
+            continue
+        out[k] = v
     return out
+
+
+def _log_prediction_safe(store: SqliteStore, payload: dict[str, Any]) -> None:
+    try:
+        store.log_prediction(payload)
+    except Exception as e:
+        # Ne doit jamais casser la requête (le client a déjà reçu la réponse)
+        print(f"⚠️ log_prediction failed: {e}")
+
+
+def _log_predictions_many_safe(store: SqliteStore, rows: list[dict[str, Any]]) -> None:
+    try:
+        store.log_predictions_many(rows)
+    except Exception as e:
+        print(f"⚠️ log_predictions_many failed: {e}")
 
 
 def _get_requested_config(loaded: LoadedModel) -> tuple[list[str], float]:
@@ -275,7 +298,7 @@ def features() -> dict[str, Any]:
 
 
 @app.post("/predict", response_model=PredictResponse)
-def predict(req: PredictRequest) -> PredictResponse:
+def predict(req: PredictRequest, background_tasks: BackgroundTasks) -> PredictResponse:
     loaded = _get_loaded()
     store = _get_store()
     adapter = _get_adapter()
@@ -333,21 +356,21 @@ def predict(req: PredictRequest) -> PredictResponse:
     latency_ms = (time.perf_counter() - t0) * 1000.0
     request_id = str(uuid4())
 
-    # 3) Log en DB : on log l'aligné (stable pour drift)
-    store.log_prediction(
-        {
-            "ts_utc": datetime.now(timezone.utc).isoformat(),
-            "request_id": request_id,
-            "model_version": loaded.model_version,
-            "proba_default": proba,
-            "threshold": thr,
-            "decision": decision,
-            "latency_ms": latency_ms,
-            "features": _json_safe_features(aligned),
-            # Optionnel si tu veux garder aussi le brut (uniquement si ta DB le supporte)
-            # "features_raw": user_features,
-        }
-    )
+    payload = {
+        "ts_utc": datetime.now(timezone.utc).isoformat(),
+        "request_id": request_id,
+        "model_version": loaded.model_version,
+        "proba_default": proba,
+        "threshold": thr,
+        "decision": decision,
+        "latency_ms": latency_ms,
+        "features": _json_safe_features(aligned),
+    }
+
+    if _async_logging_enabled():
+        background_tasks.add_task(_log_prediction_safe, store, payload)
+    else:
+        _log_prediction_safe(store, payload)
 
     return PredictResponse(
         request_id=request_id,
@@ -359,9 +382,8 @@ def predict(req: PredictRequest) -> PredictResponse:
     )
 
 
-
 @app.post("/predict_batch", response_model=PredictBatchResponse)
-def predict_batch(req: PredictBatchRequest) -> PredictBatchResponse:
+def predict_batch(req: PredictBatchRequest, background_tasks: BackgroundTasks) -> PredictBatchResponse:
     loaded = _get_loaded()
     store = _get_store()
     adapter = _get_adapter()
@@ -459,13 +481,16 @@ def predict_batch(req: PredictBatchRequest) -> PredictBatchResponse:
             }
         )
 
-    store.log_predictions_many(log_rows)
+    if _async_logging_enabled():
+        background_tasks.add_task(_log_predictions_many_safe, store, log_rows)
+    else:
+        _log_predictions_many_safe(store, log_rows)
 
     return PredictBatchResponse(n_rows=n, items=items)
 
 
 @app.post("/predict_csv")
-async def predict_csv(file: UploadFile = File(...)) -> dict[str, Any]:
+async def predict_csv(background_tasks: BackgroundTasks, file: UploadFile = File(...)) -> dict[str, Any]:
     loaded = _get_loaded()
     store = _get_store()
     adapter = _get_adapter()
@@ -574,7 +599,10 @@ async def predict_csv(file: UploadFile = File(...)) -> dict[str, Any]:
             }
         )
 
-    store.log_predictions_many(log_rows)
+    if _async_logging_enabled():
+        background_tasks.add_task(_log_predictions_many_safe, store, log_rows)
+    else:
+        _log_predictions_many_safe(store, log_rows)
 
     return {"n_rows": n, "items": items}
 

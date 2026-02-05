@@ -8,9 +8,6 @@ from pathlib import Path
 from typing import Any, Dict, List
 
 
-EPS = 1e-6
-
-
 def _json_safe(obj: Any) -> Any:
     """Convertit NaN/Inf en None pour garantir un JSON sérialisable."""
     if isinstance(obj, float) and (math.isnan(obj) or math.isinf(obj)):
@@ -25,10 +22,18 @@ def _json_safe(obj: Any) -> Any:
 @dataclass
 class SqliteStore:
     db_path: Path
+    timeout_s: float = 5.0
+
+    def _connect(self) -> sqlite3.Connection:
+        conn = sqlite3.connect(self.db_path, timeout=self.timeout_s)
+        # WAL + sync : ok pour ton cas (perf > durabilité absolue)
+        conn.execute("PRAGMA journal_mode=WAL;")
+        conn.execute("PRAGMA synchronous=NORMAL;")
+        return conn
 
     def init(self) -> None:
         self.db_path.parent.mkdir(parents=True, exist_ok=True)
-        with sqlite3.connect(self.db_path) as conn:
+        with self._connect() as conn:
             conn.execute(
                 """
                 CREATE TABLE IF NOT EXISTS predictions (
@@ -49,11 +54,10 @@ class SqliteStore:
             conn.commit()
 
     def log_prediction(self, row: Dict[str, Any]) -> None:
-        # schéma latency_ms NOT NULL -> on force un float
         latency_val = float(row.get("latency_ms") or 0.0)
         features = _json_safe(row["features"])
 
-        with sqlite3.connect(self.db_path) as conn:
+        with self._connect() as conn:
             conn.execute(
                 """
                 INSERT INTO predictions (
@@ -75,7 +79,6 @@ class SqliteStore:
             conn.commit()
 
     def log_predictions_many(self, rows: List[Dict[str, Any]]) -> None:
-        """Insertion batch (perf) : 1 transaction + executemany."""
         values = []
         for row in rows:
             latency_val = float(row.get("latency_ms") or 0.0)
@@ -93,7 +96,7 @@ class SqliteStore:
                 )
             )
 
-        with sqlite3.connect(self.db_path) as conn:
+        with self._connect() as conn:
             conn.executemany(
                 """
                 INSERT INTO predictions (
