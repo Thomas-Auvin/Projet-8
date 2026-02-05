@@ -1,0 +1,34 @@
+# Dockerfile.dashboard (local compose)
+FROM python:3.13-slim-bookworm
+
+# (pas indispensable au dashboard, mais inoffensif si LightGBM est dans les deps)
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends libgomp1 \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY --from=docker.io/astral/uv:latest /uv /uvx /bin/
+
+RUN useradd -m -u 1000 user
+
+RUN mkdir -p /home/user/app /data \
+    && chown -R user:user /home/user /data \
+    && chmod 777 /data
+
+USER user
+
+ENV HOME=/home/user \
+    UV_LINK_MODE=copy \
+    PATH="/home/user/app/.venv/bin:$PATH"
+
+WORKDIR $HOME/app
+
+COPY --chown=user:user pyproject.toml uv.lock ./
+RUN uv sync --frozen --no-dev
+
+# dashboard + scripts monitoring
+COPY --chown=user:user monitoring ./monitoring
+# (optionnel mais pratique si tu veux des defaults présents dans l'image)
+COPY --chown=user:user outputs ./outputs
+
+EXPOSE 8501
+CMD ["streamlit", "run", "monitoring/dashboard.py", "--server.address=0.0.0.0", "--server.port=8501"]

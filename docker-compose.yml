@@ -1,6 +1,9 @@
 services:
   api:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    image: projet-8-api
     ports:
       - "8000:7860"
     environment:
@@ -12,12 +15,18 @@ services:
       - ./app/artifacts:/home/user/app/app/artifacts:ro
 
   dashboard:
-    build: .
-    command: ["uv", "run", "streamlit", "run", "monitoring/dashboard.py", "--server.address=0.0.0.0", "--server.port=8501"]
+    build:
+      context: .
+      dockerfile: Dockerfile.dashboard
+    image: projet-8-dashboard
     ports:
       - "8501:8501"
+    depends_on:
+      - api
     environment:
       P8_DB_PATH: /data/predictions.sqlite
     volumes:
-      - ./data/prod:/data
+      # le dashboard lit les JSON (drift/bench). On laisse RW si tu veux générer depuis le conteneur.
       - ./outputs:/home/user/app/outputs
+      # DB en lecture seule côté dashboard (sécurité)
+      - ./data/prod:/data:ro
