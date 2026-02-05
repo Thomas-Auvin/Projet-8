@@ -159,6 +159,31 @@ class InputAdapter:
             if _is_missing(v):
                 # on laisse NaN partout (imputation fera le reste)
                 continue
+                        # Cas spécial: groupe avec UNE seule dummy (ex: HOUSETYPE_MODE_block of flats)
+            if len(g.columns) == 1:
+                c0 = g.columns[0]
+
+                # 1) accepte 0/1 numérique (ex: 0.0 dans ton CSV)
+                if isinstance(v, (int, float, np.integer, np.floating)) and not (
+                    isinstance(v, float) and np.isnan(v)
+                ):
+                    fv = float(v)
+                    if fv in (0.0, 1.0):
+                        aligned[c0] = fv
+                        continue
+
+                # 2) accepte string correspondant à la catégorie unique (ex: "block of flats", "no", ou le nom complet)
+                key = _norm_str(v)
+                col = g.value_to_column.get(key)
+                if col is not None:
+                    aligned[c0] = 1.0
+                    continue
+
+                examples = sorted({k for k in g.value_to_column.keys() if k and "_" not in k})[:10]
+                raise InputError(
+                    f"Valeur invalide pour {gname}: {v!r}. "
+                    f"Exemples possibles: {examples} ... ou bien 0/1."
+                )
             key = _norm_str(v)
             col = g.value_to_column.get(key)
             if col is None:
