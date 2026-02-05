@@ -1,0 +1,21 @@
+{
+  "generated_at_utc": "2026-01-31T00:27:08.197811+00:00",
+  "base_url": "http://127.0.0.1:8000",
+  "n": 50,
+  "batch_size": 200,
+  "payload_source": "csv:reference_sample.csv",
+  "model_version": "ba34845ed77f459cb77381602305569e",
+  "threshold": 0.5,
+  "predict_ms": {
+    "mean": 29.40990200266242,
+    "p95": 39.28122508805242
+  },
+  "batch_total_ms": {
+    "mean": 424.6129279816523,
+    "p95": 452.30471485992894
+  },
+  "batch_per_row_ms": {
+    "mean": 2.1230646399082618,
+    "p95": 2.2615235742996447
+  }
+}

@@ -39,3 +39,12 @@ mlflow.db
 # --- Allow API example files (needed on HF) ---
 !app/examples/example_input_compact.csv
 !app/examples/example_input_compact.json
+
+# SQLite runtime files (WAL mode)
+*.sqlite-wal
+*.sqlite-shm
+
+# DB locale (ne pas versionner)
+data/prod/*.sqlite
+data/prod/*.sqlite-wal
+data/prod/*.sqlite-shm

@@ -107,7 +107,7 @@ class InputAdapter:
 
         for pref in ohe_prefixes:
             cols = [f for f in feature_names if f.startswith(pref + "_")]
-            if len(cols) < 2:
+            if len(cols) < 1:
                 continue
 
             value_to_col: Dict[str, str] = {}

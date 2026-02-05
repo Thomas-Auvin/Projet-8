@@ -1,17 +1,16 @@
+# app/schemas.py
 from __future__ import annotations
 
-from typing import Dict, List, Optional, Union
-
+from typing import Any, Dict, List, Optional, Union
 from pydantic import BaseModel, Field
 
 Number = Union[int, float]
-
+Value = Union[Number, str, bool, None]  # <= IMPORTANT : pour les groupes OHE (strings)
 
 class PredictRequest(BaseModel):
-    features: Dict[str, Optional[Number]] = Field(
-        ..., description="Mapping feature_name -> numeric value (or null)"
+    features: Dict[str, Value] = Field(
+        ..., description="Mapping clé -> valeur (numérique, string pour groupes OHE, bool, ou null)"
     )
-
 
 class PredictResponse(BaseModel):
     request_id: str
@@ -21,12 +20,10 @@ class PredictResponse(BaseModel):
     model_version: str
     latency_ms: float
 
-
 class PredictBatchRequest(BaseModel):
-    rows: List[Dict[str, Optional[Number]]] = Field(
-        ..., description="List of feature dicts (one per row)"
+    rows: List[Dict[str, Value]] = Field(
+        ..., description="Liste de lignes (valeurs numériques + strings possibles pour groupes OHE)"
     )
-
 
 class PredictBatchItem(BaseModel):
     request_id: str
@@ -35,7 +32,6 @@ class PredictBatchItem(BaseModel):
     decision: int
     model_version: str
     latency_ms: float
-
 
 class PredictBatchResponse(BaseModel):
     n_rows: int
