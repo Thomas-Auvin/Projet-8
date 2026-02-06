@@ -52,13 +52,14 @@ def load_prod_features(db_path: Path, limit: int | None = 2000) -> pd.DataFrame:
     with sqlite3.connect(db_path) as conn:
         cur = conn.execute(query, params)
         for (input_json,) in cur.fetchall():
+            d: Any = None
             try:
                 d = json.loads(input_json)
-                if isinstance(d, dict):
-                    rows.append(d)
-            except Exception:
-                continue
+            except (TypeError, json.JSONDecodeError):
+                d = None
 
+            if isinstance(d, dict):
+                rows.append(d)
     if not rows:
         return pd.DataFrame()
 

@@ -229,7 +229,8 @@ def main() -> None:
             features = _find_working_features(client, base_url, candidates, allowed_keys)
             payload_source = f"csv:{sample_csv.name}"
 
-        assert features is not None
+        if features is None:
+            raise ValueError("features is None: impossible de lancer le bench (entrée/features manquantes).")
 
         predict_times = bench_predict(client, base_url, features, n=args.n)
         batch_times = bench_predict_batch(client, base_url, features, n=args.n, batch_size=args.batch_size)

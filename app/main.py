@@ -608,8 +608,6 @@ async def predict_csv(
         background_tasks.add_task(_log_predictions_many_safe, store, log_rows)
     else:
         _log_predictions_many_safe(store, log_rows)
-    if output not in {"json", "csv"}:
-        raise HTTPException(status_code=400, detail="Paramètre output invalide (json|csv)")
 
     if output == "csv":
         # On reconstruit un df résultat : input + colonnes prédiction
