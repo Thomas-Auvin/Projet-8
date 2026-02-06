@@ -101,7 +101,9 @@ def test_predict_unknown_key_strict_422(monkeypatch, client):
     monkeypatch.setenv("P8_STRICT_INPUT", "1")
     key = _get_any_allowed_key(client)
 
-    r = client.post("/predict", json={"features": {key: 100001, "UNKNOWN_KEY_FOR_TEST": 1}})
+    r = client.post(
+        "/predict", json={"features": {key: 100001, "UNKNOWN_KEY_FOR_TEST": 1}}
+    )
     assert r.status_code == 422
     detail = r.json().get("detail", {})
     assert detail.get("error") == "invalid_input"
@@ -111,7 +113,9 @@ def test_predict_unknown_key_non_strict_ok(monkeypatch, client):
     monkeypatch.setenv("P8_STRICT_INPUT", "0")
     key = _get_any_allowed_key(client)
 
-    r = client.post("/predict", json={"features": {key: 100001, "UNKNOWN_KEY_FOR_TEST": 1}})
+    r = client.post(
+        "/predict", json={"features": {key: 100001, "UNKNOWN_KEY_FOR_TEST": 1}}
+    )
     assert r.status_code == 200, r.text
 
 

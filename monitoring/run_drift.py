@@ -21,6 +21,7 @@ def get_db_path() -> Path:
 
     try:
         from project_paths import DATA_DIR  # type: ignore
+
         return (DATA_DIR / "prod" / "predictions.sqlite").resolve()
     except Exception:
         return (Path("data") / "prod" / "predictions.sqlite").resolve()
@@ -29,6 +30,7 @@ def get_db_path() -> Path:
 def get_output_dir() -> Path:
     try:
         from project_paths import OUT_DIR  # type: ignore
+
         return (OUT_DIR / "monitoring").resolve()
     except Exception:
         return (Path("outputs") / "monitoring").resolve()
@@ -114,15 +116,23 @@ def main() -> None:
 
     out_dir = get_output_dir()
     out_dir.mkdir(parents=True, exist_ok=True)
-    out_path = Path(args.out).expanduser().resolve() if args.out else (out_dir / "drift_report.json")
+    out_path = (
+        Path(args.out).expanduser().resolve()
+        if args.out
+        else (out_dir / "drift_report.json")
+    )
 
-    report = compute_drift(df_ref=df_ref, df_prod=df_prod, bins=args.bins, cat_top_k=args.cat_top_k)
+    report = compute_drift(
+        df_ref=df_ref, df_prod=df_prod, bins=args.bins, cat_top_k=args.cat_top_k
+    )
     report["generated_at_utc"] = datetime.now(timezone.utc).isoformat()
     report["db_path"] = str(db_path)
     report["ref_csv"] = str(ref_csv)
     report["prod_limit"] = int(args.limit)
 
-    out_path.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+    out_path.write_text(
+        json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
     print(f"✅ Drift report written to: {out_path}")
 
 

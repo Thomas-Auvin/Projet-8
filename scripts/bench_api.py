@@ -53,7 +53,9 @@ def main() -> None:
     ap.add_argument("--out", default="")
     args = ap.parse_args()
 
-    df = pd.read_csv("data/reference/reference_sample.csv").drop(columns=["TARGET"], errors="ignore")
+    df = pd.read_csv("data/reference/reference_sample.csv").drop(
+        columns=["TARGET"], errors="ignore"
+    )
 
     # 1 row (JSON-safe)
     row_raw = df.iloc[0].to_dict()

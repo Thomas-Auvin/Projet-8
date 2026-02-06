@@ -15,7 +15,7 @@ from uuid import uuid4
 from typing import Any, Literal
 
 from fastapi import FastAPI, HTTPException, UploadFile, File, BackgroundTasks
-from fastapi.responses import RedirectResponse,FileResponse, Response
+from fastapi.responses import RedirectResponse, FileResponse, Response
 
 from app.model_loader import LoadedModel, load_model
 from app.schemas import (
@@ -45,6 +45,7 @@ def get_db_path() -> Path:
 
     try:
         from project_paths import DATA_DIR  # type: ignore
+
         return (DATA_DIR / "prod" / "predictions.sqlite").resolve()
     except Exception:
         return (Path("data") / "prod" / "predictions.sqlite").resolve()
@@ -62,6 +63,7 @@ def _sigmoid_vec(x: np.ndarray) -> np.ndarray:
 
 def _strict_input_enabled() -> bool:
     return os.getenv("P8_STRICT_INPUT", "1") == "1"
+
 
 def _async_logging_enabled() -> bool:
     # 1 = activé (par défaut), 0 = désactivé
@@ -133,7 +135,9 @@ def _get_requested_config(loaded: LoadedModel) -> tuple[list[str], float]:
     return [str(x) for x in requested], min_rate_f
 
 
-def _is_group_filled(group: str, aligned: dict[str, Any], adapter: InputAdapter) -> bool:
+def _is_group_filled(
+    group: str, aligned: dict[str, Any], adapter: InputAdapter
+) -> bool:
     """
     Une "clé demandée" est remplie si :
     - c'est un groupe OHE (ex NAME_INCOME_TYPE) : au moins 1 dummy non-NaN
@@ -198,7 +202,9 @@ app = FastAPI(title="Credit Scoring API", version="0.1.0", lifespan=lifespan)
 
 EXAMPLES_DIR = (Path(__file__).resolve().parent / "examples").resolve()  # app/examples
 if not EXAMPLES_DIR.is_dir():
-    EXAMPLES_DIR = (Path(__file__).resolve().parent.parent / "examples").resolve()  # repo/examples
+    EXAMPLES_DIR = (
+        Path(__file__).resolve().parent.parent / "examples"
+    ).resolve()  # repo/examples
 
 print(f"✅ EXAMPLES_DIR = {EXAMPLES_DIR} (exists={EXAMPLES_DIR.is_dir()})")
 
@@ -290,7 +296,9 @@ def features() -> dict[str, Any]:
         "onehot_groups": {
             gname: {
                 "n_dummies": len(g.columns),
-                "examples": sorted({k for k in g.value_to_column.keys() if "_" not in k})[:15],
+                "examples": sorted(
+                    {k for k in g.value_to_column.keys() if "_" not in k}
+                )[:15],
             }
             for gname, g in adapter.groups.items()
         },
@@ -316,8 +324,10 @@ def predict(req: PredictRequest, background_tasks: BackgroundTasks) -> PredictRe
             forbid_unknown_keys=strict_input,  # strict => interdit clés inconnues
         )
     except InputError as e:
-        raise HTTPException(status_code=422, detail={"error": "invalid_input", "message": str(e)})
-    
+        raise HTTPException(
+            status_code=422, detail={"error": "invalid_input", "message": str(e)}
+        )
+
     if strict_input:
         requested, min_rate = _get_requested_config(loaded)
         if requested and min_rate > 0.0:
@@ -338,7 +348,7 @@ def predict(req: PredictRequest, background_tasks: BackgroundTasks) -> PredictRe
                         "hint": "Utilise GET /features pour voir les clés et groupes possibles.",
                     },
                 )
-    
+
     expected = loaded.feature_names
     X = pd.DataFrame([aligned], columns=expected)
 
@@ -383,7 +393,9 @@ def predict(req: PredictRequest, background_tasks: BackgroundTasks) -> PredictRe
 
 
 @app.post("/predict_batch", response_model=PredictBatchResponse)
-def predict_batch(req: PredictBatchRequest, background_tasks: BackgroundTasks) -> PredictBatchResponse:
+def predict_batch(
+    req: PredictBatchRequest, background_tasks: BackgroundTasks
+) -> PredictBatchResponse:
     loaded = _get_loaded()
     store = _get_store()
     adapter = _get_adapter()
@@ -475,7 +487,9 @@ def predict_batch(req: PredictBatchRequest, background_tasks: BackgroundTasks) -
                 "threshold": thr,
                 "decision": decision,
                 "latency_ms": latency_ms_per_row,
-                "features": _json_safe_features(aligned_rows[i]),  # aligné (stable drift)
+                "features": _json_safe_features(
+                    aligned_rows[i]
+                ),  # aligné (stable drift)
                 # Optionnel si DB supporte:
                 # "features_raw": req.rows[i],
             }

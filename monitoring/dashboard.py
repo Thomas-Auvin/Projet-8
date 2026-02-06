@@ -36,7 +36,12 @@ def features_df_from_report(rep: dict[str, Any]) -> pd.DataFrame:
     - all_features: dict[feature -> dict]
     - features/per_feature/feature_stats: idem
     """
-    obj = rep.get("all_features") or rep.get("features") or rep.get("per_feature") or rep.get("feature_stats")
+    obj = (
+        rep.get("all_features")
+        or rep.get("features")
+        or rep.get("per_feature")
+        or rep.get("feature_stats")
+    )
 
     if isinstance(obj, dict):
         rows: list[dict[str, Any]] = []
@@ -102,7 +107,9 @@ with tab_drift:
     st.subheader("Drift report")
 
     default_drift = os.getenv("P8_DRIFT_REPORT", "outputs/monitoring/drift_report.json")
-    drift_str = st.text_input("Chemin drift_report.json", value=default_drift, key="drift_path")
+    drift_str = st.text_input(
+        "Chemin drift_report.json", value=default_drift, key="drift_path"
+    )
     drift_path = resolve_path(drift_str)
 
     st.caption(f"Resolved: {drift_path} | exists={drift_path.exists()}")
@@ -130,7 +137,11 @@ with tab_drift:
 
         with right:
             st.subheader("Top delta missing")
-            show_df(pd.DataFrame(rep.get("top_missing_delta", []) or rep.get("top_missing", [])))
+            show_df(
+                pd.DataFrame(
+                    rep.get("top_missing_delta", []) or rep.get("top_missing", [])
+                )
+            )
 
         st.divider()
 
@@ -148,7 +159,9 @@ with tab_drift:
                 df_view = all_df.copy()
 
             if "missing_rate_delta" in df_view.columns:
-                only_high_missing = st.checkbox("Afficher seulement delta missing >= 5%", value=False)
+                only_high_missing = st.checkbox(
+                    "Afficher seulement delta missing >= 5%", value=False
+                )
                 if only_high_missing:
                     df_view = df_view[df_view["missing_rate_delta"].abs() >= 0.05]
 
@@ -164,10 +177,15 @@ with tab_drift:
 with tab_bench:
     st.subheader("Bench performances")
 
-    default_base = os.getenv("P8_BENCH_BASELINE", os.getenv("P8_BENCH_REPORT", "outputs/perf/bench_baseline.json"))
+    default_base = os.getenv(
+        "P8_BENCH_BASELINE",
+        os.getenv("P8_BENCH_REPORT", "outputs/perf/bench_baseline.json"),
+    )
     default_cur = os.getenv("P8_BENCH_CURRENT", "outputs/perf/bench_current.json")
 
-    base_str = st.text_input("Chemin bench baseline", value=default_base, key="bench_base")
+    base_str = st.text_input(
+        "Chemin bench baseline", value=default_base, key="bench_base"
+    )
     cur_str = st.text_input("Chemin bench current", value=default_cur, key="bench_cur")
 
     base_path = resolve_path(base_str)
@@ -180,7 +198,9 @@ with tab_bench:
     cur = load_json(cur_path) if cur_path.exists() else None
 
     if base is None and cur is None:
-        st.warning("Aucun bench trouvé. Génère au moins un fichier JSON de bench dans `outputs/perf/`.")
+        st.warning(
+            "Aucun bench trouvé. Génère au moins un fichier JSON de bench dans `outputs/perf/`."
+        )
     else:
         # Affichage en colonnes + deltas si possible
         m_base = bench_metrics(base) if base else None

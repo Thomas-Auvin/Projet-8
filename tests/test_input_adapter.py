@@ -175,7 +175,9 @@ def test_single_dummy_ohe_group_rejects_unexpected_string_value() -> None:
     """
     ad = _make_adapter()
     with pytest.raises(InputError) as e:
-        ad.to_aligned_features({"HOUSETYPE_MODE": "0.0"})  # cas qui t'a posé problème sur HF
+        ad.to_aligned_features(
+            {"HOUSETYPE_MODE": "0.0"}
+        )  # cas qui t'a posé problème sur HF
 
     msg = str(e.value)
     assert "Valeur invalide pour HOUSETYPE_MODE" in msg or "Valeur binaire" in msg

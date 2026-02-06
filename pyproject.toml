@@ -37,3 +37,6 @@ omit = [
   "monitoring/dashboard.py",
   "monitoring/run_bench.py",
 ]
+
+[tool.ruff]
+exclude = ["notebooks"]

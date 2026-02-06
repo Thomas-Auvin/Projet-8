@@ -6,6 +6,7 @@ import httpx
 
 try:
     from project_paths import DATA_DIR  # type: ignore
+
     sample_path = DATA_DIR / "reference" / "reference_sample.csv"
 except Exception:
     sample_path = Path("data") / "reference" / "reference_sample.csv"

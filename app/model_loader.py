@@ -52,7 +52,12 @@ def load_model(artifacts_dir: Path) -> LoadedModel:
     meta = json.loads(meta_path.read_text(encoding="utf-8"))
 
     threshold = float(meta.get("threshold", 0.5))
-    model_version = str(meta.get("model_version") or meta.get("run_id") or meta.get("run_name") or "unknown")
+    model_version = str(
+        meta.get("model_version")
+        or meta.get("run_id")
+        or meta.get("run_name")
+        or "unknown"
+    )
 
     feature_names = _infer_feature_names(pipeline, meta)
 

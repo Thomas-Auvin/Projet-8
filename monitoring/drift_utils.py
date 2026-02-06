@@ -32,7 +32,9 @@ def _psi_from_distributions(p_ref: pd.Series, p_prod: pd.Series) -> float:
     return float(((p_ref - p_prod) * np.log(p_ref / p_prod)).sum())
 
 
-def _is_numeric_series(s: pd.Series, min_numeric_ratio: float = 0.95) -> Tuple[bool, pd.Series]:
+def _is_numeric_series(
+    s: pd.Series, min_numeric_ratio: float = 0.95
+) -> Tuple[bool, pd.Series]:
     """
     Essaie de convertir en numérique. Retourne (is_numeric, numeric_series).
     """
@@ -201,7 +203,9 @@ def compute_drift(
 
     # tables triées
     by_psi = sorted(out, key=lambda x: x.psi, reverse=True)
-    by_missing_delta = sorted(out, key=lambda x: abs(x.missing_rate_delta), reverse=True)
+    by_missing_delta = sorted(
+        out, key=lambda x: abs(x.missing_rate_delta), reverse=True
+    )
 
     def fd_to_dict(fd: FeatureDrift) -> Dict[str, Any]:
         return {

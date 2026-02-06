@@ -40,7 +40,9 @@ def stats_ms(samples: List[float]) -> Dict[str, float]:
     }
 
 
-def _request_json(client: httpx.Client, method: str, url: str, **kwargs: Any) -> Tuple[int, Any]:
+def _request_json(
+    client: httpx.Client, method: str, url: str, **kwargs: Any
+) -> Tuple[int, Any]:
     r = client.request(method, url, **kwargs)
     try:
         data = r.json()
@@ -49,7 +51,9 @@ def _request_json(client: httpx.Client, method: str, url: str, **kwargs: Any) ->
     return r.status_code, data
 
 
-def _predict_ok(client: httpx.Client, base_url: str, features: Dict[str, Any]) -> Tuple[bool, Optional[Dict[str, Any]]]:
+def _predict_ok(
+    client: httpx.Client, base_url: str, features: Dict[str, Any]
+) -> Tuple[bool, Optional[Dict[str, Any]]]:
     url = base_url.rstrip("/") + "/predict"
     r = client.post(url, json={"features": features}, timeout=60.0)
     if r.status_code == 200:
@@ -60,13 +64,17 @@ def _predict_ok(client: httpx.Client, base_url: str, features: Dict[str, Any]) -
         return False, {"status_code": r.status_code, "text": r.text}
 
 
-def _filter_allowed_keys(features: Dict[str, Any], allowed_keys: Optional[set[str]]) -> Dict[str, Any]:
+def _filter_allowed_keys(
+    features: Dict[str, Any], allowed_keys: Optional[set[str]]
+) -> Dict[str, Any]:
     if not allowed_keys:
         return features
     return {k: v for k, v in features.items() if k in allowed_keys}
 
 
-def _load_candidates_from_csv(sample_csv: Path, max_rows: int = 200) -> List[Dict[str, Any]]:
+def _load_candidates_from_csv(
+    sample_csv: Path, max_rows: int = 200
+) -> List[Dict[str, Any]]:
     df = pd.read_csv(sample_csv)
     if df.shape[0] == 0:
         raise ValueError(f"CSV vide: {sample_csv}")
@@ -82,7 +90,9 @@ def _load_candidates_from_csv(sample_csv: Path, max_rows: int = 200) -> List[Dic
     return candidates
 
 
-def _try_payload_from_api_examples(client: httpx.Client, base_url: str) -> Optional[Dict[str, Any]]:
+def _try_payload_from_api_examples(
+    client: httpx.Client, base_url: str
+) -> Optional[Dict[str, Any]]:
     """
     Essaie de récupérer un exemple "qui marche" depuis l'API.
     Ton API expose /examples/example_input_compact.json.
@@ -195,8 +205,12 @@ def bench_predict_batch(
 # -------------------------
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--base-url", type=str, default=os.getenv("P8_API_URL", "http://127.0.0.1:8000"))
-    parser.add_argument("--sample-csv", type=str, default="data/reference/reference_sample.csv")
+    parser.add_argument(
+        "--base-url", type=str, default=os.getenv("P8_API_URL", "http://127.0.0.1:8000")
+    )
+    parser.add_argument(
+        "--sample-csv", type=str, default="data/reference/reference_sample.csv"
+    )
     parser.add_argument("--n", type=int, default=50)
     parser.add_argument("--batch-size", type=int, default=200)
     parser.add_argument("--out", type=str, default="outputs/perf/bench_current.json")
@@ -212,7 +226,9 @@ def main() -> None:
         # (optionnel) infos modèle
         model_version = None
         threshold = None
-        status, model_data = _request_json(client, "GET", base_url.rstrip("/") + "/model", timeout=30.0)
+        status, model_data = _request_json(
+            client, "GET", base_url.rstrip("/") + "/model", timeout=30.0
+        )
         if status == 200 and isinstance(model_data, dict):
             model_version = model_data.get("model_version")
             threshold = model_data.get("threshold")
@@ -225,15 +241,23 @@ def main() -> None:
 
         # 2) fallback: CSV + filtrage + recherche d'une ligne qui passe
         if features is None:
-            candidates = _load_candidates_from_csv(sample_csv, max_rows=args.max_csv_rows)
-            features = _find_working_features(client, base_url, candidates, allowed_keys)
+            candidates = _load_candidates_from_csv(
+                sample_csv, max_rows=args.max_csv_rows
+            )
+            features = _find_working_features(
+                client, base_url, candidates, allowed_keys
+            )
             payload_source = f"csv:{sample_csv.name}"
 
         if features is None:
-            raise ValueError("features is None: impossible de lancer le bench (entrée/features manquantes).")
+            raise ValueError(
+                "features is None: impossible de lancer le bench (entrée/features manquantes)."
+            )
 
         predict_times = bench_predict(client, base_url, features, n=args.n)
-        batch_times = bench_predict_batch(client, base_url, features, n=args.n, batch_size=args.batch_size)
+        batch_times = bench_predict_batch(
+            client, base_url, features, n=args.n, batch_size=args.batch_size
+        )
 
     pred = stats_ms(predict_times)
     batch_total = stats_ms(batch_times)
@@ -255,7 +279,9 @@ def main() -> None:
         "batch_per_row_ms": batch_per_row,
     }
 
-    out_path.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+    out_path.write_text(
+        json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
     print(f"✅ Bench written to: {out_path}")
 
 

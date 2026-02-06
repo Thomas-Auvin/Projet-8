@@ -1,7 +1,9 @@
 import pandas as pd
 from pathlib import Path
 
-RAW = Path("data/raw_local/application_train_features.csv")  # adapte le nom si différent
+RAW = Path(
+    "data/raw_local/application_train_features.csv"
+)  # adapte le nom si différent
 OUT = Path("data/reference/reference_sample.csv")
 
 df = pd.read_csv(RAW)
