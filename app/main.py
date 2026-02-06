@@ -12,10 +12,10 @@ from contextlib import asynccontextmanager
 from datetime import datetime, timezone
 from pathlib import Path
 from uuid import uuid4
-from typing import Any
+from typing import Any, Literal
 
 from fastapi import FastAPI, HTTPException, UploadFile, File, BackgroundTasks
-from fastapi.responses import RedirectResponse,FileResponse
+from fastapi.responses import RedirectResponse,FileResponse, Response
 
 from app.model_loader import LoadedModel, load_model
 from app.schemas import (
@@ -490,7 +490,12 @@ def predict_batch(req: PredictBatchRequest, background_tasks: BackgroundTasks) -
 
 
 @app.post("/predict_csv")
-async def predict_csv(background_tasks: BackgroundTasks, file: UploadFile = File(...)) -> dict[str, Any]:
+async def predict_csv(
+    background_tasks: BackgroundTasks,
+    file: UploadFile = File(...),
+    output: Literal["json", "csv"] = "json",
+) -> Any:
+
     loaded = _get_loaded()
     store = _get_store()
     adapter = _get_adapter()
@@ -603,6 +608,25 @@ async def predict_csv(background_tasks: BackgroundTasks, file: UploadFile = File
         background_tasks.add_task(_log_predictions_many_safe, store, log_rows)
     else:
         _log_predictions_many_safe(store, log_rows)
+    if output not in {"json", "csv"}:
+        raise HTTPException(status_code=400, detail="Paramètre output invalide (json|csv)")
+
+    if output == "csv":
+        # On reconstruit un df résultat : input + colonnes prédiction
+        pred_df = pd.DataFrame(items)
+        out_df = df.reset_index(drop=True).copy()
+        out_df = pd.concat([out_df, pred_df], axis=1)
+
+        csv_bytes = out_df.to_csv(index=False).encode("utf-8")
+        orig = file.filename or "uploaded"
+        stem = Path(orig).stem
+        filename = f"predictions_{stem}.csv"
+
+        return Response(
+            content=csv_bytes,
+            media_type="text/csv; charset=utf-8",
+            headers={"Content-Disposition": f'attachment; filename="{filename}"'},
+        )
 
     return {"n_rows": n, "items": items}
 
