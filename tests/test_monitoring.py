@@ -1,7 +1,7 @@
 import json
 import sqlite3
 from datetime import datetime, timezone
-
+from contextlib import closing
 import pandas as pd
 
 
@@ -49,7 +49,7 @@ def _insert_pred(conn: sqlite3.Connection, request_id: str, features: dict) -> N
 def test_monitoring_compute_drift_from_sqlite(tmp_path):
     # --- Arrange: DB temp + quelques lignes "prod"
     db_path = tmp_path / "preds.sqlite"
-    with sqlite3.connect(db_path) as conn:
+    with closing(sqlite3.connect(db_path)) as conn:
         _create_predictions_table(conn)
         _insert_pred(conn, "r1", {"A": 1.0, "B": "x", "C": None})
         _insert_pred(conn, "r2", {"A": 2.0, "B": "y", "C": 10.0})
@@ -78,7 +78,9 @@ def test_monitoring_compute_drift_from_sqlite(tmp_path):
     assert report["features_total"] >= 3
 
     assert "top_psi" in report and isinstance(report["top_psi"], list)
-    assert "top_missing_delta" in report and isinstance(report["top_missing_delta"], list)
+    assert "top_missing_delta" in report and isinstance(
+        report["top_missing_delta"], list
+    )
     assert "all_features" in report and isinstance(report["all_features"], list)
 
     # au moins une feature devrait exister

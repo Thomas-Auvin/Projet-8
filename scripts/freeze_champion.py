@@ -76,7 +76,9 @@ def find_model_artifact_path(client: MlflowClient, run_id: str) -> str:
     try_paths = ["model", "sklearn-model", "classifier", "pipeline"]
     for p in try_paths:
         try:
-            tmp = mlflow.artifacts.download_artifacts(run_id=run_id, artifact_path=f"{p}/MLmodel")
+            tmp = mlflow.artifacts.download_artifacts(
+                run_id=run_id, artifact_path=f"{p}/MLmodel"
+            )
             if Path(tmp).exists():
                 return p
         except Exception:
@@ -88,7 +90,9 @@ def find_model_artifact_path(client: MlflowClient, run_id: str) -> str:
         if it.is_dir:
             p = it.path
             try:
-                tmp = mlflow.artifacts.download_artifacts(run_id=run_id, artifact_path=f"{p}/MLmodel")
+                tmp = mlflow.artifacts.download_artifacts(
+                    run_id=run_id, artifact_path=f"{p}/MLmodel"
+                )
                 if Path(tmp).exists():
                     return p
             except Exception:

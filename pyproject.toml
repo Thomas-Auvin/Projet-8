@@ -25,7 +25,18 @@ dependencies = [
 
 [dependency-groups]
 dev = [
+    "bandit>=1.9.3",
     "httpx>=0.28.1",
     "pytest>=9.0.2",
     "pytest-cov>=7.0.0",
+    "ruff>=0.15.0",
 ]
+
+[tool.coverage.run]
+omit = [
+  "monitoring/dashboard.py",
+  "monitoring/run_bench.py",
+]
+
+[tool.ruff]
+exclude = ["notebooks"]

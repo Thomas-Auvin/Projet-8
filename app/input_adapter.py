@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Any, Dict, List, Optional, Set, Tuple
+from typing import Any, Dict, List, Set, Tuple
 import re
 
 import numpy as np
@@ -60,14 +60,16 @@ def _to_binary_or_nan(v: Any) -> float:
             return 1.0
         if s in {"0", "false", "f", "no", "n", "non"}:
             return 0.0
-        raise InputError(f"Valeur binaire attendue (oui/non, y/n, true/false, 0/1), reçu: {v!r}")
+        raise InputError(
+            f"Valeur binaire attendue (oui/non, y/n, true/false, 0/1), reçu: {v!r}"
+        )
     raise InputError(f"Valeur binaire invalide: {v!r}")
 
 
 @dataclass(frozen=True)
 class OneHotGroup:
     name: str
-    columns: List[str]               # les dummies exacts attendus par le modèle
+    columns: List[str]  # les dummies exacts attendus par le modèle
     value_to_column: Dict[str, str]  # valeur normalisée -> dummy col
 
 
@@ -118,7 +120,9 @@ class InputAdapter:
                 # autoriser aussi l'utilisateur à donner directement le nom complet de la dummy
                 value_to_col[_norm_str(c)] = c
 
-            groups[pref] = OneHotGroup(name=pref, columns=cols, value_to_column=value_to_col)
+            groups[pref] = OneHotGroup(
+                name=pref, columns=cols, value_to_column=value_to_col
+            )
 
         return cls(feature_names=feature_names, feature_set=feature_set, groups=groups)
 
@@ -143,7 +147,7 @@ class InputAdapter:
             if unknown:
                 unk = sorted(list(unknown))[:30]
                 raise InputError(
-                    f"Clés inconnues: {unk} (et {max(0, len(unknown)-len(unk))} autres). "
+                    f"Clés inconnues: {unk} (et {max(0, len(unknown) - len(unk))} autres). "
                     "Utilise GET /features pour voir les clés autorisées."
                 )
 
@@ -159,7 +163,7 @@ class InputAdapter:
             if _is_missing(v):
                 # on laisse NaN partout (imputation fera le reste)
                 continue
-                        # Cas spécial: groupe avec UNE seule dummy (ex: HOUSETYPE_MODE_block of flats)
+                # Cas spécial: groupe avec UNE seule dummy (ex: HOUSETYPE_MODE_block of flats)
             if len(g.columns) == 1:
                 c0 = g.columns[0]
 
@@ -179,7 +183,9 @@ class InputAdapter:
                     aligned[c0] = 1.0
                     continue
 
-                examples = sorted({k for k in g.value_to_column.keys() if k and "_" not in k})[:10]
+                examples = sorted(
+                    {k for k in g.value_to_column.keys() if k and "_" not in k}
+                )[:10]
                 raise InputError(
                     f"Valeur invalide pour {gname}: {v!r}. "
                     f"Exemples possibles: {examples} ... ou bien 0/1."
@@ -188,7 +194,9 @@ class InputAdapter:
             col = g.value_to_column.get(key)
             if col is None:
                 # aide utilisateur : quelques valeurs attendues
-                examples = sorted({k for k in g.value_to_column.keys() if k and "_" not in k})[:10]
+                examples = sorted(
+                    {k for k in g.value_to_column.keys() if k and "_" not in k}
+                )[:10]
                 raise InputError(
                     f"Valeur invalide pour {gname}: {v!r}. "
                     f"Exemples possibles: {examples} ..."
@@ -222,6 +230,10 @@ class InputAdapter:
             "n_features": n_total,
             "n_missing": n_missing,
             "missing_rate": float(n_missing / n_total) if n_total else 0.0,
-            "used_groups": [g for g in self.groups.keys() if g in user_row and not _is_missing(user_row.get(g))],
+            "used_groups": [
+                g
+                for g in self.groups.keys()
+                if g in user_row and not _is_missing(user_row.get(g))
+            ],
         }
         return aligned, stats

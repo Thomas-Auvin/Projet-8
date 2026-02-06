@@ -41,13 +41,17 @@ def main() -> None:
     requested = [str(x) for x in requested]
 
     # On remplit toutes les requested => l’exemple passe forcément la règle min_filled_rate
-    features: dict[str, Any] = {k: pick_example_value_for_group(adapter, k) for k in requested}
+    features: dict[str, Any] = {
+        k: pick_example_value_for_group(adapter, k) for k in requested
+    }
 
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
 
     payload = {"features": features}
-    (out_dir / args.json_name).write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    (out_dir / args.json_name).write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
 
     df = pd.DataFrame([features])
     df.to_csv(out_dir / args.csv_name, index=False)

@@ -49,8 +49,12 @@ class SqliteStore:
                 )
                 """
             )
-            conn.execute("CREATE INDEX IF NOT EXISTS idx_predictions_ts ON predictions(ts_utc)")
-            conn.execute("CREATE INDEX IF NOT EXISTS idx_predictions_model ON predictions(model_version)")
+            conn.execute(
+                "CREATE INDEX IF NOT EXISTS idx_predictions_ts ON predictions(ts_utc)"
+            )
+            conn.execute(
+                "CREATE INDEX IF NOT EXISTS idx_predictions_model ON predictions(model_version)"
+            )
             conn.commit()
 
     def log_prediction(self, row: Dict[str, Any]) -> None:

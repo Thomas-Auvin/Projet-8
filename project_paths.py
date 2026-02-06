@@ -46,7 +46,7 @@ ROOT = find_project_root()
 
 # Dossiers data (tu peux adapter si ta structure réelle est différente)
 DATA_DIR = ROOT / "data"
-RAW_DIR = DATA_DIR / "raw_local"      # cohérent avec ta logique 'data complète locale'
+RAW_DIR = DATA_DIR / "raw_local"  # cohérent avec ta logique 'data complète locale'
 INTERIM_DIR = DATA_DIR / "interim"
 PROCESSED_DIR = DATA_DIR / "processed"
 REFERENCE_DIR = DATA_DIR / "reference"  # utile pour échantillons committables
@@ -61,8 +61,14 @@ MLRUNS_DIR = ROOT / "mlruns"
 
 # Création des dossiers (safe)
 for d in [
-    DATA_DIR, RAW_DIR, INTERIM_DIR, PROCESSED_DIR, REFERENCE_DIR,
-    OUT_DIR, FIG_DIR, TAB_DIR,
+    DATA_DIR,
+    RAW_DIR,
+    INTERIM_DIR,
+    PROCESSED_DIR,
+    REFERENCE_DIR,
+    OUT_DIR,
+    FIG_DIR,
+    TAB_DIR,
     MLRUNS_DIR,
 ]:
     d.mkdir(parents=True, exist_ok=True)

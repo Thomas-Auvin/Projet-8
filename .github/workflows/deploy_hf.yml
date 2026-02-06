@@ -20,6 +20,29 @@ jobs:
           fetch-depth: 0
           lfs: true
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v3
+
+      - name: Install deps (dev)
+        run: uv sync --frozen --dev
+
+      - name: Ruff lint (static checks)
+        run: uv run ruff check . --output-format=github
+
+      - name: Ruff format (check only)
+        run: uv run ruff format --check .
+
+      - name: Run tests
+        run: uv run pytest -q
+
+      - name: Bandit (security scan)
+        run: uv run bandit -r app monitoring -x tests -q
+
       - name: Configure git
         run: |
           git config user.name "github-actions[bot]"

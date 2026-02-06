@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import Any, Dict, Optional
+from typing import Any, Dict
 
 import numpy as np
 import mlflow
@@ -249,14 +249,18 @@ def run_model_cv(
             aps.append(ap_fold)
             f1s.append(f1_fold)
 
-            fold_metrics.append({"fold": float(fold_idx), "auc": auc_fold, "ap": ap_fold, "f1": f1_fold})
+            fold_metrics.append(
+                {"fold": float(fold_idx), "auc": auc_fold, "ap": ap_fold, "f1": f1_fold}
+            )
 
             mlflow.log_metric("auc_fold", auc_fold, step=fold_idx)
             mlflow.log_metric("ap_fold", ap_fold, step=fold_idx)
             mlflow.log_metric("f1_fold", f1_fold, step=fold_idx)
 
         # OOF global
-        oof_metrics = log_binary_clf_metrics("oof", y_arr, oof_probas, threshold=threshold)
+        oof_metrics = log_binary_clf_metrics(
+            "oof", y_arr, oof_probas, threshold=threshold
+        )
 
         mlflow.log_metric("auc_mean_cv", float(np.mean(aucs)))
         mlflow.log_metric("ap_mean_cv", float(np.mean(aps)))

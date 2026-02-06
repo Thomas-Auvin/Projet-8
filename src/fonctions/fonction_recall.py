@@ -17,8 +17,8 @@ def pick_threshold_for_recall(y_true, y_scores, target_recall=0.80):
     precision, recall, thresholds = precision_recall_curve(y_true, y_scores)
 
     # On enlève le premier point (recall[0] = 1.0 sans seuil associé)
-    recall_t = recall[1:]          # shape (N-1,)
-    thresholds_t = thresholds      # shape (N-1,)
+    recall_t = recall[1:]  # shape (N-1,)
+    thresholds_t = thresholds  # shape (N-1,)
 
     # Indices où le recall atteint au moins la cible
     idx_candidates = np.where(recall_t >= target_recall)[0]

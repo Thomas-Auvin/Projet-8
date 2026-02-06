@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import math
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -21,12 +20,12 @@ def _save_json(p: Path, obj: dict[str, Any]) -> None:
     p.write_text(json.dumps(obj, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
-def _pick_features_by_cum_importance(
-    imp_df: pd.DataFrame, target: float
-) -> list[str]:
+def _pick_features_by_cum_importance(imp_df: pd.DataFrame, target: float) -> list[str]:
     # attend colonnes: feature, importance
     if "feature" not in imp_df.columns or "importance" not in imp_df.columns:
-        raise ValueError("feature_importances.csv doit contenir les colonnes: feature, importance")
+        raise ValueError(
+            "feature_importances.csv doit contenir les colonnes: feature, importance"
+        )
 
     imp = imp_df[["feature", "importance"]].copy()
     imp["importance"] = pd.to_numeric(imp["importance"], errors="coerce").fillna(0.0)
@@ -42,7 +41,11 @@ def _pick_features_by_cum_importance(
     imp["cum"] = imp["importance_norm"].cumsum()
 
     # inclure la ligne qui franchit le seuil
-    idx = int((imp["cum"] >= target).idxmax()) if (imp["cum"] >= target).any() else len(imp) - 1
+    idx = (
+        int((imp["cum"] >= target).idxmax())
+        if (imp["cum"] >= target).any()
+        else len(imp) - 1
+    )
     selected = imp.loc[:idx, "feature"].astype(str).tolist()
     return selected
 
@@ -64,10 +67,16 @@ def _compute_min_rate(ratio: float) -> float:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--importances", type=str, default="data/reference/feature_importances.csv")
+    ap.add_argument(
+        "--importances", type=str, default="data/reference/feature_importances.csv"
+    )
     ap.add_argument("--model-meta", type=str, default="app/artifacts/model_meta.json")
     ap.add_argument("--target", type=float, default=0.80)
-    ap.add_argument("--write-report", action="store_true", help="écrit aussi data/reference/requested_config.json")
+    ap.add_argument(
+        "--write-report",
+        action="store_true",
+        help="écrit aussi data/reference/requested_config.json",
+    )
     args = ap.parse_args()
 
     imp_path = Path(args.importances)
@@ -76,7 +85,9 @@ def main() -> None:
     meta = _load_json(meta_path)
     feature_names = meta.get("feature_names")
     if not isinstance(feature_names, list) or not feature_names:
-        raise RuntimeError("model_meta.json ne contient pas feature_names (liste non vide).")
+        raise RuntimeError(
+            "model_meta.json ne contient pas feature_names (liste non vide)."
+        )
 
     adapter = InputAdapter.from_feature_names([str(x) for x in feature_names])
 
@@ -103,7 +114,7 @@ def main() -> None:
     requested_groups = sorted(requested)
 
     allowed = sorted(list(adapter.allowed_input_keys()))
-    ratio = (len(requested_groups) / max(len(allowed), 1))
+    ratio = len(requested_groups) / max(len(allowed), 1)
     min_rate = _compute_min_rate(ratio)
 
     # update meta (ce que ton API lit déjà)
