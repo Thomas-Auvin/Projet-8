@@ -1,21 +1,48 @@
 {
-  "generated_at_utc": "2026-01-31T00:27:08.197811+00:00",
+  "generated_at_utc": "2026-02-10T23:57:07.476094+00:00",
   "base_url": "http://127.0.0.1:8000",
   "n": 50,
   "batch_size": 200,
-  "payload_source": "csv:reference_sample.csv",
+  "payload_source": "api_examples",
+  "payload_n_keys": 198,
+  "allowed_keys_n": 575,
   "model_version": "ba34845ed77f459cb77381602305569e",
   "threshold": 0.5,
   "predict_ms": {
-    "mean": 29.40990200266242,
-    "p95": 39.28122508805242
+    "n": 50.0,
+    "mean": 24.794194004498422,
+    "p50": 24.447949952445924,
+    "p95": 29.086405044654384,
+    "p99": 30.443847029237077,
+    "min": 21.823100047186017,
+    "max": 30.453499988652766
   },
   "batch_total_ms": {
-    "mean": 424.6129279816523,
-    "p95": 452.30471485992894
+    "n": 50.0,
+    "mean": 699.6436960087158,
+    "p50": 707.6802999945357,
+    "p95": 846.8123550061136,
+    "p99": 886.5602140268311,
+    "min": 496.31229997612536,
+    "max": 893.2347000809386
   },
   "batch_per_row_ms": {
-    "mean": 2.1230646399082618,
-    "p95": 2.2615235742996447
-  }
+    "mean": 3.4982184800435787,
+    "p50": 3.5384014999726787,
+    "p95": 4.234061775030568,
+    "p99": 4.432801070134156,
+    "min": 2.481561499880627,
+    "max": 4.466173500404693
+  },
+  "predict_success": 50,
+  "predict_errors": 0,
+  "predict_success_rate": 1.0,
+  "predict_throughput_rps": 40.32924147273499,
+  "predict_duration_s": 1.239795200061053,
+  "batch_success": 50,
+  "batch_errors": 0,
+  "batch_success_rate": 1.0,
+  "batch_throughput_batches_per_s": 1.4292944923208728,
+  "batch_throughput_rows_per_s": 285.85889846417456,
+  "batch_duration_s": 34.98229389998596
 }
