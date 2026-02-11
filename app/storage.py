@@ -19,12 +19,16 @@ def _json_safe(obj: Any) -> Any:
     - dict/list -> récursion
     """
     # numpy scalar (np.bool_, np.int64, np.float64, etc.) -> python scalar
-    if hasattr(obj, "item") and type(obj).__module__.startswith("numpy"):
+    if hasattr(obj, "item"):
         try:
-            return _json_safe(obj.item())
-        except Exception:
-            # si jamais .item() plante, on retombe sur les règles suivantes
-            pass
+            obj_item = obj.item()
+        except (ValueError, TypeError, AttributeError):
+            obj_item = (
+                obj  # on garde l'objet inchangé et on continue les règles suivantes
+            )
+
+        if obj_item is not obj:
+            return _json_safe(obj_item)
 
     if isinstance(obj, float) and (math.isnan(obj) or math.isinf(obj)):
         return None
