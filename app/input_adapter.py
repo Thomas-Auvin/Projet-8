@@ -176,9 +176,9 @@ class InputAdapter:
                 c0 = g.columns[0]
 
                 # accepte 0/1 numérique
-                if isinstance(v, (int, float, np.integer, np.floating)) and not _is_missing(
-                    v
-                ):
+                if isinstance(
+                    v, (int, float, np.integer, np.floating)
+                ) and not _is_missing(v):
                     fv = float(v)
                     if fv in (0.0, 1.0):
                         aligned[c0] = fv

@@ -69,7 +69,7 @@ def test_monitoring_compute_drift_from_sqlite(tmp_path):
     from monitoring.run_drift import load_prod_features
     from monitoring.drift_utils import compute_drift
 
-    df_prod = load_prod_features(db_path, limit=100)
+    df_prod, _meta = load_prod_features(db_path, limit=100)
     report = compute_drift(df_ref=df_ref, df_prod=df_prod, bins=5, cat_top_k=10)
 
     # --- Assert: structure minimale

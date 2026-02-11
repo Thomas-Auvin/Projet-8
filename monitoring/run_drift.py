@@ -21,6 +21,7 @@ def get_db_path() -> Path:
 
     try:
         from project_paths import DATA_DIR  # type: ignore
+
         return (DATA_DIR / "prod" / "predictions.sqlite").resolve()
     except Exception:
         return (Path("data") / "prod" / "predictions.sqlite").resolve()
@@ -29,6 +30,7 @@ def get_db_path() -> Path:
 def get_output_dir() -> Path:
     try:
         from project_paths import OUT_DIR  # type: ignore
+
         return (OUT_DIR / "monitoring").resolve()
     except Exception:
         return (Path("outputs") / "monitoring").resolve()
@@ -52,17 +54,26 @@ def load_prod_features(
         params = (int(limit),)
 
     rows: List[Dict[str, Any]] = []
-    meta: Dict[str, Any] = {"parse_errors": 0, "read_rows": 0, "ts_min": None, "ts_max": None}
+    meta: Dict[str, Any] = {
+        "parse_errors": 0,
+        "read_rows": 0,
+        "ts_min": None,
+        "ts_max": None,
+    }
 
     with sqlite3.connect(db_path) as conn:
         cur = conn.execute(query, params)
         fetched = cur.fetchall()
         meta["read_rows"] = len(fetched)
 
-        for (_id, ts_utc, input_json) in fetched:
+        for _id, ts_utc, input_json in fetched:
             if isinstance(ts_utc, str):
-                meta["ts_min"] = ts_utc if meta["ts_min"] is None else min(meta["ts_min"], ts_utc)
-                meta["ts_max"] = ts_utc if meta["ts_max"] is None else max(meta["ts_max"], ts_utc)
+                meta["ts_min"] = (
+                    ts_utc if meta["ts_min"] is None else min(meta["ts_min"], ts_utc)
+                )
+                meta["ts_max"] = (
+                    ts_utc if meta["ts_max"] is None else max(meta["ts_max"], ts_utc)
+                )
 
             try:
                 d = json.loads(input_json)
@@ -198,16 +209,38 @@ def main() -> None:
         default="data/reference/reference_sample.csv",
         help="CSV de référence",
     )
-    parser.add_argument("--limit", type=int, default=2000, help="Dernières N lignes prod.")
-    parser.add_argument("--bins", type=int, default=10, help="Nombre de bins quantiles (PSI num).")
-    parser.add_argument("--cat-top-k", type=int, default=30, help="Top-K catégories, reste -> OTHER.")
-    parser.add_argument("--out", type=str, default="", help="Chemin JSON sortie (défaut outputs/monitoring/drift_report.json).")
+    parser.add_argument(
+        "--limit", type=int, default=2000, help="Dernières N lignes prod."
+    )
+    parser.add_argument(
+        "--bins", type=int, default=10, help="Nombre de bins quantiles (PSI num)."
+    )
+    parser.add_argument(
+        "--cat-top-k", type=int, default=30, help="Top-K catégories, reste -> OTHER."
+    )
+    parser.add_argument(
+        "--out",
+        type=str,
+        default="",
+        help="Chemin JSON sortie (défaut outputs/monitoring/drift_report.json).",
+    )
 
     # Alerting
-    parser.add_argument("--psi-warn", type=float, default=0.10, help="Seuil PSI warning.")
-    parser.add_argument("--psi-crit", type=float, default=0.25, help="Seuil PSI critique.")
-    parser.add_argument("--missing-delta-warn", type=float, default=0.05, help="Seuil abs(delta missing) warning.")
-    parser.add_argument("--min-prod-rows", type=int, default=200, help="Alerte si prod rows < ce seuil.")
+    parser.add_argument(
+        "--psi-warn", type=float, default=0.10, help="Seuil PSI warning."
+    )
+    parser.add_argument(
+        "--psi-crit", type=float, default=0.25, help="Seuil PSI critique."
+    )
+    parser.add_argument(
+        "--missing-delta-warn",
+        type=float,
+        default=0.05,
+        help="Seuil abs(delta missing) warning.",
+    )
+    parser.add_argument(
+        "--min-prod-rows", type=int, default=200, help="Alerte si prod rows < ce seuil."
+    )
     parser.add_argument(
         "--fail-on-alert",
         action="store_true",
@@ -224,9 +257,15 @@ def main() -> None:
 
     out_dir = get_output_dir()
     out_dir.mkdir(parents=True, exist_ok=True)
-    out_path = Path(args.out).expanduser().resolve() if args.out else (out_dir / "drift_report.json")
+    out_path = (
+        Path(args.out).expanduser().resolve()
+        if args.out
+        else (out_dir / "drift_report.json")
+    )
 
-    report = compute_drift(df_ref=df_ref, df_prod=df_prod, bins=args.bins, cat_top_k=args.cat_top_k)
+    report = compute_drift(
+        df_ref=df_ref, df_prod=df_prod, bins=args.bins, cat_top_k=args.cat_top_k
+    )
     report["generated_at_utc"] = datetime.now(timezone.utc).isoformat()
     report["db_path"] = str(db_path)
     report["ref_csv"] = str(ref_csv)
@@ -247,7 +286,9 @@ def main() -> None:
         min_prod_rows=int(args.min_prod_rows),
     )
 
-    out_path.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+    out_path.write_text(
+        json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
     print(f"✅ Drift report written to: {out_path}")
 
     if args.fail_on_alert and report["alerts"]["status"] != "ok":

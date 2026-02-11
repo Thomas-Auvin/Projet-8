@@ -457,7 +457,7 @@ def predict_batch(
                 "threshold": thr,
                 "decision": decision,
                 "latency_ms": latency_ms_per_row,
-                "features": aligned_rows[i]
+                "features": aligned_rows[i],
                 # aligné (stable drift)
                 # Optionnel si DB supporte:
                 # "features_raw": req.rows[i],

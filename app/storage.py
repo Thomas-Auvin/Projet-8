@@ -229,7 +229,9 @@ class AsyncSqliteWriter:
             last_flush = time.monotonic()
 
             while not self._stop.is_set() or not self.q.empty():
-                timeout = max(0.0, self.flush_interval_s - (time.monotonic() - last_flush))
+                timeout = max(
+                    0.0, self.flush_interval_s - (time.monotonic() - last_flush)
+                )
                 try:
                     row = self.q.get(timeout=timeout)
                     buf.append(row)
@@ -237,7 +239,10 @@ class AsyncSqliteWriter:
                     pass
 
                 now = time.monotonic()
-                if buf and (len(buf) >= self.batch_size or (now - last_flush) >= self.flush_interval_s):
+                if buf and (
+                    len(buf) >= self.batch_size
+                    or (now - last_flush) >= self.flush_interval_s
+                ):
                     self._flush(conn, buf)
                     last_flush = now
 
