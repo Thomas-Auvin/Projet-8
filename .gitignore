@@ -48,3 +48,4 @@ mlflow.db
 data/prod/*.sqlite
 data/prod/*.sqlite-wal
 data/prod/*.sqlite-shm
+*.odp
