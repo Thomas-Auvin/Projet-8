@@ -60,10 +60,13 @@ L’API accepte des clés “compactes” (ex: `NAME_INCOME_TYPE="Working"`) et 
 - `uv` installé
 
 ### Installer
+
 ```bash
 uv sync --frozen --dev
 ```
+
 ### Démarrer l'API 
+
 ```bash
 uv run uvicorn app.main:app --host 127.0.0.1 --port 8000
 ```
@@ -222,6 +225,11 @@ Pour toutes modofications du code, il faut passer par une PR via une nouvelle br
 CI : lint/tests + build Docker sur push/PR
 
 CD : déploiement automatique vers Hugging Face Spaces (master → HF main)
+
+### Exemple Hugging Face
+
+L'API est déployé sur l'application Hugging Face permettant de disposer d'un exemple directe à l'adresse suivante : 
+https://huggingface.co/spaces/Thomas-Auvin/Projet-8
 
 ### Licence
 
