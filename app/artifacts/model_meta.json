@@ -3,7 +3,7 @@
   "experiment": "home-credit-benchmark",
   "run_name": "lgbm_champion_frozen",
   "model_artifact_path": "model",
-  "threshold": 0.5,
+  "threshold": 0.0937,
   "feature_names": [
     "SK_ID_CURR",
     "NAME_CONTRACT_TYPE",
