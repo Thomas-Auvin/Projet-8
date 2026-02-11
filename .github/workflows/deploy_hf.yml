@@ -47,12 +47,47 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git lfs install --local
 
-      - name: Push to Hugging Face Space (main)
+      - name: Push to Hugging Face Space (main) - filtered snapshot
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
           HF_USERNAME: ${{ secrets.HF_USERNAME }}
           HF_SPACE_NAME: ${{ secrets.HF_SPACE_NAME }}
         run: |
-          git remote add hf https://${HF_USERNAME}:${HF_TOKEN}@huggingface.co/spaces/${HF_USERNAME}/${HF_SPACE_NAME}
-          git push hf HEAD:main
+          set -euo pipefail
+
+          # Sanity checks (fail fast with a clear message)
+          if [[ -z "${HF_TOKEN}" || -z "${HF_USERNAME}" || -z "${HF_SPACE_NAME}" ]]; then
+            echo "Missing one of HF_TOKEN / HF_USERNAME / HF_SPACE_NAME secrets."
+            exit 1
+          fi
+
+          # Ensure remote exists (idempotent)
+          if git remote get-url hf >/dev/null 2>&1; then
+            git remote remove hf
+          fi
+          git remote add hf "https://${HF_USERNAME}:${HF_TOKEN}@huggingface.co/spaces/${HF_USERNAME}/${HF_SPACE_NAME}"
+
+          # Create a deploy branch from the current commit (does NOT affect GitHub)
+          git checkout -B hf-deploy
+
+          # Remove binary files that HF rejects in git pushes
+          # (Keep this list minimal; you can add more patterns if needed)
+          shopt -s globstar nullglob
+
+          # Remove tracked .odp files (the one that broke your push)
+          git rm -f --ignore-unmatch **/*.odp *.odp || true
+
+          # Optionally remove other "deliverable" binaries if you ever add them:
+          # git rm -f --ignore-unmatch **/*.pptx **/*.docx **/*.pdf || true
+
+          # Commit only if something changed
+          if ! git diff --cached --quiet; then
+            git commit -m "deploy: filtered snapshot for Hugging Face"
+          else
+            echo "No files to filter from the deploy snapshot."
+          fi
+
+          # Push the snapshot to HF main (force to overwrite previous snapshot)
+          git push -f hf hf-deploy:main
