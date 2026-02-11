@@ -33,10 +33,23 @@ def _json_safe(v: Any) -> Any:
 def stats_ms(samples: List[float]) -> Dict[str, float]:
     arr = np.asarray(samples, dtype=float)
     if arr.size == 0:
-        return {"mean": 0.0, "p95": 0.0}
+        return {
+            "n": 0.0,
+            "mean": 0.0,
+            "p50": 0.0,
+            "p95": 0.0,
+            "p99": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+        }
     return {
+        "n": float(arr.size),
         "mean": float(arr.mean()),
+        "p50": float(np.percentile(arr, 50)),
         "p95": float(np.percentile(arr, 95)),
+        "p99": float(np.percentile(arr, 99)),
+        "min": float(arr.min()),
+        "max": float(arr.max()),
     }
 
 
@@ -158,7 +171,7 @@ def bench_predict(
     features: Dict[str, Any],
     n: int,
     warmup: int = 5,
-) -> List[float]:
+) -> Tuple[List[float], int, int, float]:
     url = base_url.rstrip("/") + "/predict"
     payload = {"features": features}
 
@@ -168,12 +181,20 @@ def bench_predict(
         r.raise_for_status()
 
     times: List[float] = []
+    ok_count = 0
+    err_count = 0
+    t_start = time.perf_counter()
     for _ in range(n):
         t0 = time.perf_counter()
         r = client.post(url, json=payload, timeout=60.0)
-        r.raise_for_status()
-        times.append((time.perf_counter() - t0) * 1000.0)
-    return times
+        dt_ms = (time.perf_counter() - t0) * 1000.0
+        if r.status_code == 200:
+            times.append(dt_ms)
+            ok_count += 1
+        else:
+            err_count += 1
+    duration_s = time.perf_counter() - t_start
+    return times, ok_count, err_count, duration_s
 
 
 def bench_predict_batch(
@@ -183,7 +204,7 @@ def bench_predict_batch(
     n: int,
     batch_size: int,
     warmup: int = 2,
-) -> List[float]:
+) -> Tuple[List[float], int, int, float]:
     url = base_url.rstrip("/") + "/predict_batch"
     payload = {"rows": [features] * batch_size}
 
@@ -192,12 +213,20 @@ def bench_predict_batch(
         r.raise_for_status()
 
     times: List[float] = []
+    ok_count = 0
+    err_count = 0
+    t_start = time.perf_counter()
     for _ in range(n):
         t0 = time.perf_counter()
         r = client.post(url, json=payload, timeout=120.0)
-        r.raise_for_status()
-        times.append((time.perf_counter() - t0) * 1000.0)
-    return times
+        dt_ms = (time.perf_counter() - t0) * 1000.0
+        if r.status_code == 200:
+            times.append(dt_ms)
+            ok_count += 1
+        else:
+            err_count += 1
+    duration_s = time.perf_counter() - t_start
+    return times, ok_count, err_count, duration_s
 
 
 # -------------------------
@@ -254,8 +283,10 @@ def main() -> None:
                 "features is None: impossible de lancer le bench (entrée/features manquantes)."
             )
 
-        predict_times = bench_predict(client, base_url, features, n=args.n)
-        batch_times = bench_predict_batch(
+        predict_times, predict_ok, predict_err, predict_dur_s = bench_predict(
+            client, base_url, features, n=args.n
+        )
+        batch_times, batch_ok, batch_err, batch_dur_s = bench_predict_batch(
             client, base_url, features, n=args.n, batch_size=args.batch_size
         )
 
@@ -263,8 +294,21 @@ def main() -> None:
     batch_total = stats_ms(batch_times)
     batch_per_row = {
         "mean": batch_total["mean"] / max(int(args.batch_size), 1),
+        "p50": batch_total["p50"] / max(int(args.batch_size), 1),
         "p95": batch_total["p95"] / max(int(args.batch_size), 1),
+        "p99": batch_total["p99"] / max(int(args.batch_size), 1),
+        "min": batch_total["min"] / max(int(args.batch_size), 1),
+        "max": batch_total["max"] / max(int(args.batch_size), 1),
     }
+    predict_success_rate = float(predict_ok) / max(int(args.n), 1)
+    batch_success_rate = float(batch_ok) / max(int(args.n), 1)
+    predict_rps = float(predict_ok) / predict_dur_s if predict_dur_s > 0 else 0.0
+    batch_rps = float(batch_ok) / batch_dur_s if batch_dur_s > 0 else 0.0
+    batch_rows_per_s = (
+        (float(batch_ok) * float(args.batch_size)) / batch_dur_s
+        if batch_dur_s > 0
+        else 0.0
+    )
 
     report: Dict[str, Any] = {
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
@@ -272,11 +316,24 @@ def main() -> None:
         "n": int(args.n),
         "batch_size": int(args.batch_size),
         "payload_source": payload_source,
+        "payload_n_keys": int(len(features)),
+        "allowed_keys_n": int(len(allowed_keys)) if allowed_keys is not None else None,
         "model_version": model_version,
         "threshold": threshold,
         "predict_ms": pred,
         "batch_total_ms": batch_total,
         "batch_per_row_ms": batch_per_row,
+        "predict_success": int(predict_ok),
+        "predict_errors": int(predict_err),
+        "predict_success_rate": predict_success_rate,
+        "predict_throughput_rps": predict_rps,
+        "predict_duration_s": float(predict_dur_s),
+        "batch_success": int(batch_ok),
+        "batch_errors": int(batch_err),
+        "batch_success_rate": batch_success_rate,
+        "batch_throughput_batches_per_s": batch_rps,
+        "batch_throughput_rows_per_s": batch_rows_per_s,
+        "batch_duration_s": float(batch_dur_s),
     }
 
     out_path.write_text(

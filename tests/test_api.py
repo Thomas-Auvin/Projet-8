@@ -215,7 +215,8 @@ def test_predict_missing_model(monkeypatch, tmp_path):
 
 
 def test_helpers_json_safe_and_sigmoid():
-    from app.main import _json_safe_features, _sigmoid, _sigmoid_vec
+    from app.main import _sigmoid, _sigmoid_vec
+    from app.storage import _json_safe
 
     d = {
         "b": np.bool_(True),
@@ -224,7 +225,8 @@ def test_helpers_json_safe_and_sigmoid():
         "nan": np.float64(np.nan),
         "inf": np.float64(np.inf),
     }
-    out = _json_safe_features(d)
+    out = _json_safe(d)
+
     assert out["b"] is True
     assert out["i"] == 3
     assert out["f"] == 1.25

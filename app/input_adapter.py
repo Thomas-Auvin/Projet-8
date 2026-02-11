@@ -1,7 +1,6 @@
-# app/input_adapter.py
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Any, Dict, List, Set, Tuple
 import re
 
@@ -15,8 +14,9 @@ class InputError(ValueError):
 def _is_missing(v: Any) -> bool:
     if v is None:
         return True
-    if isinstance(v, float) and np.isnan(v):
-        return True
+    if isinstance(v, (float, np.floating)):
+        # supporte float natif + numpy float (np.float64, etc.)
+        return bool(np.isnan(float(v)))
     if isinstance(v, str):
         s = v.strip()
         if s == "":
@@ -36,7 +36,9 @@ def _norm_str(v: Any) -> str:
 def _to_float_or_nan(v: Any) -> float:
     if _is_missing(v):
         return float("nan")
-    if isinstance(v, (int, float)) and not (isinstance(v, float) and np.isnan(v)):
+    if isinstance(v, (int, float, np.integer, np.floating)) and not (
+        isinstance(v, (float, np.floating)) and np.isnan(float(v))
+    ):
         return float(v)
     if isinstance(v, str):
         # accepte "1,23" -> 1.23
@@ -49,7 +51,7 @@ def _to_binary_or_nan(v: Any) -> float:
     """Mappe des valeurs usuelles en 0/1."""
     if _is_missing(v):
         return float("nan")
-    if isinstance(v, (int, float)):
+    if isinstance(v, (int, float, np.integer, np.floating)):
         fv = float(v)
         if fv in (0.0, 1.0):
             return fv
@@ -79,6 +81,14 @@ class InputAdapter:
     feature_set: Set[str]
     groups: Dict[str, OneHotGroup]  # group_name -> OneHotGroup
 
+    # caches pour éviter de reconstruire des structures à chaque requête
+    _allowed_keys: Set[str] = field(init=False, repr=False)
+    _template: Dict[str, float] = field(init=False, repr=False)
+
+    def __post_init__(self) -> None:
+        self._allowed_keys = set(self.feature_set) | set(self.groups.keys())
+        self._template = {f: float("nan") for f in self.feature_names}
+
     @classmethod
     def from_feature_names(cls, feature_names: List[str]) -> "InputAdapter":
         """
@@ -87,8 +97,6 @@ class InputAdapter:
         """
         feature_set = set(feature_names)
 
-        # Préfixes catégoriels typiques Home Credit (présents chez toi via feature_names)
-        # Tu peux en ajouter si tu vois d'autres familles *_<category>
         ohe_prefixes = [
             "CODE_GENDER",
             "NAME_TYPE_SUITE",
@@ -114,10 +122,8 @@ class InputAdapter:
 
             value_to_col: Dict[str, str] = {}
             for c in cols:
-                # suffix = ce qu'il y a après "PREF_"
                 suffix = c[len(pref) + 1 :]
                 value_to_col[_norm_str(suffix)] = c
-                # autoriser aussi l'utilisateur à donner directement le nom complet de la dummy
                 value_to_col[_norm_str(c)] = c
 
             groups[pref] = OneHotGroup(
@@ -127,8 +133,8 @@ class InputAdapter:
         return cls(feature_names=feature_names, feature_set=feature_set, groups=groups)
 
     def allowed_input_keys(self) -> Set[str]:
-        # L'utilisateur peut fournir soit des colonnes directes, soit des colonnes "groupe" (ex ORGANIZATION_TYPE)
-        return set(self.feature_set) | set(self.groups.keys())
+        # copie pour éviter mutation externe
+        return set(self._allowed_keys)
 
     def to_aligned_features(
         self,
@@ -151,36 +157,40 @@ class InputAdapter:
                     "Utilise GET /features pour voir les clés autorisées."
                 )
 
-        # 2) init full vector NaN
-        aligned: Dict[str, float] = {f: float("nan") for f in self.feature_names}
+        # 2) init full vector NaN (copie rapide)
+        aligned: Dict[str, float] = self._template.copy()
 
-        # 3) gérer d'abord les groupes OHE (si présents)
-        # Si un groupe est fourni (ex ORGANIZATION_TYPE="Postal"), on force toutes ses dummies à 0 et une à 1.
+        # features effectivement renseignées (≠ NaN) pour calculer n_missing sans scanner feature_names
+        filled: Set[str] = set()
+
+        # 3) groupes OHE
         for gname, g in self.groups.items():
             if gname not in user_row:
                 continue
             v = user_row.get(gname)
             if _is_missing(v):
-                # on laisse NaN partout (imputation fera le reste)
                 continue
-                # Cas spécial: groupe avec UNE seule dummy (ex: HOUSETYPE_MODE_block of flats)
+
+            # Cas spécial: groupe avec UNE seule dummy
             if len(g.columns) == 1:
                 c0 = g.columns[0]
 
-                # 1) accepte 0/1 numérique (ex: 0.0 dans ton CSV)
-                if isinstance(v, (int, float, np.integer, np.floating)) and not (
-                    isinstance(v, float) and np.isnan(v)
+                # accepte 0/1 numérique
+                if isinstance(v, (int, float, np.integer, np.floating)) and not _is_missing(
+                    v
                 ):
                     fv = float(v)
                     if fv in (0.0, 1.0):
                         aligned[c0] = fv
+                        filled.add(c0)
                         continue
 
-                # 2) accepte string correspondant à la catégorie unique (ex: "block of flats", "no", ou le nom complet)
+                # accepte string (suffix ou dummy complète)
                 key = _norm_str(v)
                 col = g.value_to_column.get(key)
                 if col is not None:
                     aligned[c0] = 1.0
+                    filled.add(c0)
                     continue
 
                 examples = sorted(
@@ -190,10 +200,11 @@ class InputAdapter:
                     f"Valeur invalide pour {gname}: {v!r}. "
                     f"Exemples possibles: {examples} ... ou bien 0/1."
                 )
+
+            # Groupe multi-dummies
             key = _norm_str(v)
             col = g.value_to_column.get(key)
             if col is None:
-                # aide utilisateur : quelques valeurs attendues
                 examples = sorted(
                     {k for k in g.value_to_column.keys() if k and "_" not in k}
                 )[:10]
@@ -201,31 +212,34 @@ class InputAdapter:
                     f"Valeur invalide pour {gname}: {v!r}. "
                     f"Exemples possibles: {examples} ..."
                 )
-            # set all 0 then chosen 1
+
             for c in g.columns:
                 aligned[c] = 0.0
+                filled.add(c)
             aligned[col] = 1.0
+            filled.add(col)
 
         # 4) features directes
         for k, v in user_row.items():
             if k in self.groups:
-                # déjà traité (groupe OHE)
                 continue
             if k not in self.feature_set:
-                # unknown déjà géré si forbid_unknown_keys=True, sinon on ignore
+                continue
+            if _is_missing(v):
                 continue
 
-            # Heuristique simple:
-            # - si colonne ressemble à FLAG_* => binaire
-            # - sinon float
             if k.startswith("FLAG_") or k in {"TARGET"}:
-                aligned[k] = _to_binary_or_nan(v)
+                val = _to_binary_or_nan(v)
             else:
-                aligned[k] = _to_float_or_nan(v)
+                val = _to_float_or_nan(v)
 
-        # 5) stats utiles
+            aligned[k] = val
+            if not np.isnan(val):
+                filled.add(k)
+
+        # 5) stats utiles (sans scan complet des features)
         n_total = len(self.feature_names)
-        n_missing = sum(1 for f in self.feature_names if np.isnan(aligned[f]))
+        n_missing = n_total - len(filled)
         stats = {
             "n_features": n_total,
             "n_missing": n_missing,

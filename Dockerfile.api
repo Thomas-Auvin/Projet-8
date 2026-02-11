@@ -21,7 +21,7 @@ USER user
 
 ENV HOME=/home/user \
     UV_LINK_MODE=copy \
-    P8_DB_PATH=/data/predictions.sqlite \
+    P8_DB_PATH=/home/user/app/data/prod/predictions.sqlite \
     P8_ARTIFACTS_DIR=/home/user/app/app/artifacts \
     P8_STRICT_INPUT=1 \
     PATH="/home/user/app/.venv/bin:$PATH"

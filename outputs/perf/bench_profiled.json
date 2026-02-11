@@ -1,0 +1,48 @@
+{
+  "generated_at_utc": "2026-02-06T18:08:39.671964+00:00",
+  "base_url": "http://127.0.0.1:8000",
+  "n": 50,
+  "batch_size": 200,
+  "payload_source": "api_examples",
+  "payload_n_keys": 198,
+  "allowed_keys_n": 575,
+  "model_version": "ba34845ed77f459cb77381602305569e",
+  "threshold": 0.5,
+  "predict_ms": {
+    "n": 50.0,
+    "mean": 26.38007399858907,
+    "p50": 26.74985001794994,
+    "p95": 30.0186600361485,
+    "p99": 33.86601700098253,
+    "min": 17.064900021068752,
+    "max": 36.18699999060482
+  },
+  "batch_total_ms": {
+    "n": 50.0,
+    "mean": 1001.8179839965887,
+    "p50": 922.9646999738179,
+    "p95": 1483.9926449756601,
+    "p99": 1589.3919280520638,
+    "min": 780.1410000538453,
+    "max": 1620.4838000703603
+  },
+  "batch_per_row_ms": {
+    "mean": 5.0090899199829435,
+    "p50": 4.61482349986909,
+    "p95": 7.419963224878301,
+    "p99": 7.946959640260319,
+    "min": 3.9007050002692267,
+    "max": 8.102419000351802
+  },
+  "predict_success": 50,
+  "predict_errors": 0,
+  "predict_success_rate": 1.0,
+  "predict_throughput_rps": 37.904864702209714,
+  "predict_duration_s": 1.3190919000189751,
+  "batch_success": 50,
+  "batch_errors": 0,
+  "batch_success_rate": 1.0,
+  "batch_throughput_batches_per_s": 0.9981839480449699,
+  "batch_throughput_rows_per_s": 199.63678960899398,
+  "batch_duration_s": 50.090967800002545
+}

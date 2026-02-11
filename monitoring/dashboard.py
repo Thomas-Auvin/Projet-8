@@ -79,11 +79,22 @@ def bench_metrics(bench: dict[str, Any]) -> dict[str, float]:
 
     return {
         "predict_mean": g(pm, "mean"),
+        "predict_p50": g(pm, "p50"),
         "predict_p95": g(pm, "p95"),
+        "predict_p99": g(pm, "p99"),
         "batch_total_mean": g(bt, "mean"),
+        "batch_total_p50": g(bt, "p50"),
         "batch_total_p95": g(bt, "p95"),
+        "batch_total_p99": g(bt, "p99"),
         "batch_row_mean": g(br, "mean"),
+        "batch_row_p50": g(br, "p50"),
         "batch_row_p95": g(br, "p95"),
+        "batch_row_p99": g(br, "p99"),
+        # Perf “système”
+        "predict_rps": float(bench.get("predict_throughput_rps", 0.0) or 0.0),
+        "batch_rows_s": float(bench.get("batch_throughput_rows_per_s", 0.0) or 0.0),
+        "predict_success_rate": float(bench.get("predict_success_rate", 0.0) or 0.0),
+        "batch_success_rate": float(bench.get("batch_success_rate", 0.0) or 0.0),
     }
 
 
@@ -127,6 +138,20 @@ with tab_drift:
         c2.metric("Ref rows", rep.get("n_ref_rows", rep.get("ref_rows", 0)))
         c3.metric("Features", rep.get("features_total", rep.get("n_features", 0)))
         c4.metric("Generated (UTC)", rep.get("generated_at_utc", ""))
+
+        alerts = rep.get("alerts")
+        if isinstance(alerts, dict):
+            st.subheader("Alertes")
+            st.write(f"**Status:** {alerts.get('status', 'ok')}")
+            a1, a2 = st.columns(2)
+            a1.metric("Warnings", int(alerts.get("n_warn", 0) or 0))
+            a2.metric("Critical", int(alerts.get("n_critical", 0) or 0))
+
+            items = alerts.get("items", []) or []
+            if items:
+                show_df(pd.DataFrame(items))
+            else:
+                st.success("Aucune alerte.")
 
         st.divider()
 
@@ -212,12 +237,19 @@ with tab_bench:
         colC.markdown("### Delta vs baseline")
 
         keys = [
-            ("predict_mean", "Predict mean (ms)"),
+            ("predict_p50", "Predict p50 (ms)"),
             ("predict_p95", "Predict p95 (ms)"),
-            ("batch_row_mean", "Batch/row mean (ms)"),
+            ("predict_p99", "Predict p99 (ms)"),
+            ("batch_row_p50", "Batch/row p50 (ms)"),
             ("batch_row_p95", "Batch/row p95 (ms)"),
-            ("batch_total_mean", "Batch total mean (ms)"),
+            ("batch_row_p99", "Batch/row p99 (ms)"),
+            ("batch_total_p50", "Batch total p50 (ms)"),
             ("batch_total_p95", "Batch total p95 (ms)"),
+            ("batch_total_p99", "Batch total p99 (ms)"),
+            ("predict_rps", "Predict throughput (req/s)"),
+            ("batch_rows_s", "Batch throughput (rows/s)"),
+            ("predict_success_rate", "Predict success rate"),
+            ("batch_success_rate", "Batch success rate"),
         ]
 
         for k, label in keys:

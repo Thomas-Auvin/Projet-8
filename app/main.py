@@ -14,7 +14,7 @@ from pathlib import Path
 from uuid import uuid4
 from typing import Any, Literal
 
-from fastapi import FastAPI, HTTPException, UploadFile, File, BackgroundTasks
+from fastapi import FastAPI, HTTPException, UploadFile, File
 from fastapi.responses import RedirectResponse, FileResponse, Response
 
 from app.model_loader import LoadedModel, load_model
@@ -27,6 +27,14 @@ from app.schemas import (
 )
 from app.storage import SqliteStore
 from app.input_adapter import InputAdapter, InputError
+
+
+def _db_logging_enabled() -> bool:
+    return os.getenv("P8_DISABLE_DB_LOG", "0") != "1"
+
+
+def _async_db_writer_enabled() -> bool:
+    return os.getenv("P8_DB_ASYNC_WRITER", "1") == "1"
 
 
 def get_artifacts_dir() -> Path:
@@ -63,46 +71,6 @@ def _sigmoid_vec(x: np.ndarray) -> np.ndarray:
 
 def _strict_input_enabled() -> bool:
     return os.getenv("P8_STRICT_INPUT", "1") == "1"
-
-
-def _async_logging_enabled() -> bool:
-    # 1 = activé (par défaut), 0 = désactivé
-    return os.getenv("P8_ASYNC_LOG", "1") == "1"
-
-
-def _json_safe_features(d: dict[str, Any]) -> dict[str, Any]:
-    out: dict[str, Any] = {}
-    for k, v in d.items():
-        # bool numpy
-        if isinstance(v, (bool, np.bool_)):
-            out[k] = bool(v)
-            continue
-        # int numpy
-        if isinstance(v, (int, np.integer)):
-            out[k] = int(v)
-            continue
-        # float numpy
-        if isinstance(v, (float, np.floating)):
-            fv = float(v)
-            out[k] = None if (math.isnan(fv) or math.isinf(fv)) else fv
-            continue
-        out[k] = v
-    return out
-
-
-def _log_prediction_safe(store: SqliteStore, payload: dict[str, Any]) -> None:
-    try:
-        store.log_prediction(payload)
-    except Exception as e:
-        # Ne doit jamais casser la requête (le client a déjà reçu la réponse)
-        print(f"⚠️ log_prediction failed: {e}")
-
-
-def _log_predictions_many_safe(store: SqliteStore, rows: list[dict[str, Any]]) -> None:
-    try:
-        store.log_predictions_many(rows)
-    except Exception as e:
-        print(f"⚠️ log_predictions_many failed: {e}")
 
 
 def _get_requested_config(loaded: LoadedModel) -> tuple[list[str], float]:
@@ -174,6 +142,8 @@ async def lifespan(app: FastAPI):
 
     store = SqliteStore(db_path)
     store.init()
+    if _db_logging_enabled() and _async_db_writer_enabled():
+        store.start_async_writer()
 
     adapter = InputAdapter.from_feature_names(loaded.feature_names)
     app.state.adapter = adapter
@@ -190,6 +160,8 @@ async def lifespan(app: FastAPI):
     print("✅ DB_PATH       =", str(db_path))
 
     yield
+
+    store.stop_async_writer()
 
     # pas de connexion persistante à fermer (sqlite3.connect dans log_prediction),
     # mais on peut nettoyer l'état
@@ -306,7 +278,7 @@ def features() -> dict[str, Any]:
 
 
 @app.post("/predict", response_model=PredictResponse)
-def predict(req: PredictRequest, background_tasks: BackgroundTasks) -> PredictResponse:
+def predict(req: PredictRequest) -> PredictResponse:
     loaded = _get_loaded()
     store = _get_store()
     adapter = _get_adapter()
@@ -374,13 +346,11 @@ def predict(req: PredictRequest, background_tasks: BackgroundTasks) -> PredictRe
         "threshold": thr,
         "decision": decision,
         "latency_ms": latency_ms,
-        "features": _json_safe_features(aligned),
+        "features": aligned,
     }
 
-    if _async_logging_enabled():
-        background_tasks.add_task(_log_prediction_safe, store, payload)
-    else:
-        _log_prediction_safe(store, payload)
+    if _db_logging_enabled():
+        store.enqueue_prediction(payload)
 
     return PredictResponse(
         request_id=request_id,
@@ -394,7 +364,7 @@ def predict(req: PredictRequest, background_tasks: BackgroundTasks) -> PredictRe
 
 @app.post("/predict_batch", response_model=PredictBatchResponse)
 def predict_batch(
-    req: PredictBatchRequest, background_tasks: BackgroundTasks
+    req: PredictBatchRequest,
 ) -> PredictBatchResponse:
     loaded = _get_loaded()
     store = _get_store()
@@ -487,25 +457,21 @@ def predict_batch(
                 "threshold": thr,
                 "decision": decision,
                 "latency_ms": latency_ms_per_row,
-                "features": _json_safe_features(
-                    aligned_rows[i]
-                ),  # aligné (stable drift)
+                "features": aligned_rows[i]
+                # aligné (stable drift)
                 # Optionnel si DB supporte:
                 # "features_raw": req.rows[i],
             }
         )
 
-    if _async_logging_enabled():
-        background_tasks.add_task(_log_predictions_many_safe, store, log_rows)
-    else:
-        _log_predictions_many_safe(store, log_rows)
+    if _db_logging_enabled():
+        store.enqueue_predictions_many(log_rows)
 
     return PredictBatchResponse(n_rows=n, items=items)
 
 
 @app.post("/predict_csv")
 async def predict_csv(
-    background_tasks: BackgroundTasks,
     file: UploadFile = File(...),
     output: Literal["json", "csv"] = "json",
 ) -> Any:
@@ -614,14 +580,12 @@ async def predict_csv(
                 "threshold": thr,
                 "decision": decision,
                 "latency_ms": latency_ms_per_row,
-                "features": _json_safe_features(aligned_rows[i]),  # aligné
+                "features": aligned_rows[i],  # aligné
             }
         )
 
-    if _async_logging_enabled():
-        background_tasks.add_task(_log_predictions_many_safe, store, log_rows)
-    else:
-        _log_predictions_many_safe(store, log_rows)
+    if _db_logging_enabled():
+        store.enqueue_predictions_many(log_rows)
 
     if output == "csv":
         # On reconstruit un df résultat : input + colonnes prédiction
