@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout (with LFS)
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -31,25 +31,19 @@ jobs:
       - name: Install deps (dev)
         run: uv sync --frozen --dev
 
-      - name: Ruff lint (static checks)
+      - name: Ruff lint
         run: uv run ruff check . --output-format=github
 
-      - name: Ruff format (check only)
+      - name: Ruff format (check)
         run: uv run ruff format --check .
 
-      - name: Run tests
+      - name: Tests
         run: uv run pytest -q
 
-      - name: Bandit (security scan)
+      - name: Bandit
         run: uv run bandit -r app monitoring -x tests -q
 
-      - name: Configure git
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git lfs install --local
-
-      - name: Push to Hugging Face Space (main) - filtered snapshot
+      - name: Deploy to Hugging Face (snapshot branch, filtered)
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
           HF_USERNAME: ${{ secrets.HF_USERNAME }}
@@ -57,37 +51,37 @@ jobs:
         run: |
           set -euo pipefail
 
-          # Sanity checks (fail fast with a clear message)
           if [[ -z "${HF_TOKEN}" || -z "${HF_USERNAME}" || -z "${HF_SPACE_NAME}" ]]; then
             echo "Missing one of HF_TOKEN / HF_USERNAME / HF_SPACE_NAME secrets."
             exit 1
           fi
 
-          # Ensure remote exists (idempotent)
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Ensure Git LFS is active (important if model.joblib is tracked via LFS)
+          git lfs install --local
+
+          # Add / refresh HF remote
           if git remote get-url hf >/dev/null 2>&1; then
             git remote remove hf
           fi
           git remote add hf "https://${HF_USERNAME}:${HF_TOKEN}@huggingface.co/spaces/${HF_USERNAME}/${HF_SPACE_NAME}"
 
-          # Create a deploy branch from the current commit (does NOT affect GitHub)
-          git checkout -B hf-deploy
+          # Create an orphan branch so we DO NOT push full history (avoids banned binaries in old commits)
+          git checkout --orphan hf-deploy
 
-          # Remove binary files that HF rejects in git pushes
-          # (Keep this list minimal; you can add more patterns if needed)
-          shopt -s globstar nullglob
+          # Remove binaries that HF rejects from the working tree before committing the snapshot
+          # Add more patterns if needed, but keep minimal
+          find . -type f \( -name "*.odp" \) -print -delete || true
 
-          # Remove tracked .odp files (the one that broke your push)
-          git rm -f --ignore-unmatch **/*.odp *.odp || true
+          # (Optional safety) also exclude typical “deliverables”
+          # find . -type f \( -name "*.pptx" -o -name "*.docx" \) -print -delete || true
 
-          # Optionally remove other "deliverable" binaries if you ever add them:
-          # git rm -f --ignore-unmatch **/*.pptx **/*.docx **/*.pdf || true
+          # Clean index and commit snapshot
+          git reset
+          git add -A
+          git commit -m "deploy: snapshot to Hugging Face (filtered)"
 
-          # Commit only if something changed
-          if ! git diff --cached --quiet; then
-            git commit -m "deploy: filtered snapshot for Hugging Face"
-          else
-            echo "No files to filter from the deploy snapshot."
-          fi
-
-          # Push the snapshot to HF main (force to overwrite previous snapshot)
+          # Force push snapshot to HF main
           git push -f hf hf-deploy:main
