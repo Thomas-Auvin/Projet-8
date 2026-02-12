@@ -1,0 +1,73 @@
+Lien vers le repo sur GitHub :
+https://github.com/Thomas-Auvin/Projet-8
+
+Historique des versions : 
+
+
+* 0f94b00 (HEAD -> feat/tests-input-adapter, origin/feat/tests-input-adapter) fix: réparation espace HF via CD
+* 389f07a fix: CD vers hugging face sans odp v2 et readme
+* 6660b7b fix: CD vers hugging face sans odp
+* 44bc873 fix: CD vers hugging face sans odp
+* 2d6ee83 chore: remove ODP (HF deploy)
+* f244232 fix: réparation du threshold
+* 46a3840 docs: mise à jour du README
+* 56c94e0 fix: bandit B110 in json-safe helper
+* 37f906d feat: drift alerts and dashboard + performance improvements
+* e1de181 feat(monitoring): add drift alerts and dashboard display
+* de70519 ci: fix ruff and exclude notebooks
+* b876a16 fix: changement des tests et rajout de ruff et bandit a la CI/CD
+*   fa7c33f (origin/master, origin/HEAD, master) Merge pull request #8 from Thomas-Auvin/feat/predict-csv-export
+|\  
+| * e816f26 (origin/feat/predict-csv-export, feat/predict-csv-export) feat(api): add CSV export option to /predict_csv
+|/  
+*   fc17c25 Merge pull request #7 from Thomas-Auvin/feat/split-dockerfiles
+|\  
+| * 83bb7d5 (origin/feat/split-dockerfiles, feat/split-dockerfiles) chore(docker): split API and dashboard into separate Dockerfiles
+|/  
+*   541d884 Merge pull request #6 from Thomas-Auvin/fix/csv-compact-single-dummy
+|\  
+| * 27b0b5c (origin/fix/csv-compact-single-dummy, fix/csv-compact-single-dummy) Fix: accept 0/1 for single-dummy OHE groups
+|/  
+*   d14c5a2 Merge pull request #4 from Thomas-Auvin/dependabot/uv/uv-915b9422ef
+|\  
+| * cbf5b7b (origin/dependabot/uv/uv-915b9422ef) build(deps): bump protobuf in the uv group across 1 directory
+* |   fa81694 Merge pull request #5 from Thomas-Auvin/fix/drift-report
+|\ \  
+| |/  
+|/|   
+| * b02ef2f (origin/fix/drift-report, fix/drift-report) Fix: accept single-dummy OHE groups (CSV compact)
+* | 59f8868 Merge pull request #3 from Thomas-Auvin/fix/drift-report
+|\| 
+| * 645fbe3 docs: ajout complet des drifts reports
+| * 51ef4a1 docs: ajout complet des drifts reports
+* | 01ea341 Merge pull request #2 from Thomas-Auvin/fix/examples-path
+|\| 
+| * faac412 (origin/fix/examples-path, fix/examples-path) Fix: ship example CSV for HF (/examples endpoint)
+* | 38f492b Merge pull request #1 from Thomas-Auvin/feat/hf-deploy-check
+|\| 
+| * a0fdd90 (origin/feat/hf-deploy-check, feat/hf-deploy-check) feat: mise a jour fonctions completes api V1
+|/  
+* a67b764 perf: add baseline benchmark and drift report
+* 671f47b (tag: v0.1.0) fix: Deploy(CD)
+* 048dc51 fix: réparation CI et Deploy(CD)
+* b5a6fbe build: restore Docker and workflows from hf-space-clean
+* caa106f fix: réparation CI et Deploy(CD)
+* c1f5d43 docs: ajout d'un readme brouillon
+* 795438e (space/main, space/HEAD) chore: ignore local artifacts (mlflow db, pdf)
+* 0cd48f8 (master-old, backup/pre-hf-binary-cleanup) perf: batch sqlite logging + aligned features
+* 1797843 chore: redirect root to /docs
+* 358bbcb chore: track model artifact with git-lfs
+* 10fbe01 test: add lightweight model artifacts for CI V2
+* 01dcd1e test: add lightweight model artifacts for CI
+* 710df24 chore: initial commit avec API et monitoring (sans model artifacts)
+* edee4f6 (origin/master-old, origin/backup/pre-hf-binary-cleanup) perf: batch sqlite logging + aligned features
+* 9675e6d chore: redirect root to /docs
+* a0f7ff9 chore: track model artifact with git-lfs
+* 4c035c5 test: add lightweight model artifacts for CI V2
+* a05ed45 test: add lightweight model artifacts for CI
+* a4a8459 chore: initial commit avec API et monitoring (sans model artifacts)
+* 93e857b (origin/hf-space-clean, hf-space-clean) perf: batch sqlite logging + aligned features
+* 8e415b3 chore: redirect root to /docs
+* 34b8d04 deploy: ajout readme
+* 82b4009 deploy: HF Space minimal (no local binaries)
+* a818741 (hf-space) deploy: HF Space (clean repo, no local binaries)
