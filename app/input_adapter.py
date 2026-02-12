@@ -33,6 +33,13 @@ def _norm_str(v: Any) -> str:
     return s.lower()
 
 
+def _is_nan(v: Any) -> bool:
+    try:
+        return bool(np.isnan(float(v)))
+    except Exception:
+        return True
+
+
 def _to_float_or_nan(v: Any) -> float:
     if _is_missing(v):
         return float("nan")
@@ -43,7 +50,11 @@ def _to_float_or_nan(v: Any) -> float:
     if isinstance(v, str):
         # accepte "1,23" -> 1.23
         s = v.strip().replace(",", ".")
-        return float(s)
+        try:
+            return float(s)
+        except ValueError:
+            # IMPORTANT: on remonte une InputError (422) plutôt qu'un ValueError brut (500)
+            raise InputError(f"Valeur numérique invalide: {v!r}") from None
     raise InputError(f"Valeur numérique invalide: {v!r}")
 
 
@@ -66,6 +77,39 @@ def _to_binary_or_nan(v: Any) -> float:
             f"Valeur binaire attendue (oui/non, y/n, true/false, 0/1), reçu: {v!r}"
         )
     raise InputError(f"Valeur binaire invalide: {v!r}")
+
+
+def _validate_plausibility(aligned: Dict[str, float]) -> None:
+    """
+    Contrôles simples de plausibilité métier (prod-hardening minimal).
+    - DAYS_BIRTH (jours): négatif + âge estimé entre 18 et 120 ans
+    - AMT_INCOME_TOTAL : strictement > 0 (0 ou négatif = incohérent)
+    """
+
+    # --- 1) Âge plausible (Home Credit: DAYS_BIRTH est en jours, souvent négatif)
+    if "DAYS_BIRTH" in aligned:
+        v = aligned.get("DAYS_BIRTH", float("nan"))
+        if not _is_nan(v):
+            days = float(v)
+            if days > 0:
+                raise InputError(
+                    "DAYS_BIRTH doit être négatif (nombre de jours avant aujourd'hui)."
+                )
+            age_years = -days / 365.25
+            if age_years < 18 or age_years > 120:
+                raise InputError(
+                    f"Âge incohérent (≈ {age_years:.1f} ans). Attendu: [18, 120]."
+                )
+
+    # --- 2) Revenu non nul
+    if "AMT_INCOME_TOTAL" in aligned:
+        inc = aligned.get("AMT_INCOME_TOTAL", float("nan"))
+        if not _is_nan(inc):
+            inc_f = float(inc)
+            if inc_f <= 0:
+                raise InputError(
+                    "AMT_INCOME_TOTAL doit être strictement > 0 (revenu nul/négatif incohérent)."
+                )
 
 
 @dataclass(frozen=True)
@@ -236,6 +280,9 @@ class InputAdapter:
             aligned[k] = val
             if not np.isnan(val):
                 filled.add(k)
+
+        # 4bis) plausibility checks (âge, revenu, etc.)
+        _validate_plausibility(aligned)
 
         # 5) stats utiles (sans scan complet des features)
         n_total = len(self.feature_names)
